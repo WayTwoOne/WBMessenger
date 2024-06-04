@@ -11,6 +11,10 @@
 		E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715834F2C0FA25B00EADFF7 /* ContentView.swift */; };
 		E71583522C0FA25C00EADFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71583512C0FA25C00EADFF7 /* Assets.xcassets */; };
 		E71583552C0FA25C00EADFF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71583542C0FA25C00EADFF7 /* Preview Assets.xcassets */; };
+		E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715835B2C0FA47700EADFF7 /* WalkthroughView.swift */; };
+		E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715835D2C0FA4AF00EADFF7 /* LightOrDarkImage.swift */; };
+		E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71583602C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift */; };
+		E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71583632C0FA81E00EADFF7 /* VerificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		E715834F2C0FA25B00EADFF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E71583512C0FA25C00EADFF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71583542C0FA25C00EADFF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E715835B2C0FA47700EADFF7 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		E715835D2C0FA4AF00EADFF7 /* LightOrDarkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightOrDarkImage.swift; sourceTree = "<group>"; };
+		E71583602C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementAndButtonView.swift; sourceTree = "<group>"; };
+		E71583632C0FA81E00EADFF7 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 			children = (
 				E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */,
 				E715834F2C0FA25B00EADFF7 /* ContentView.swift */,
+				E715835F2C0FA4BB00EADFF7 /* Walkthrough */,
+				E71583622C0FA7DA00EADFF7 /* Verification */,
 				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
 			);
@@ -65,6 +75,24 @@
 				E71583542C0FA25C00EADFF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E715835F2C0FA4BB00EADFF7 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				E715835B2C0FA47700EADFF7 /* WalkthroughView.swift */,
+				E715835D2C0FA4AF00EADFF7 /* LightOrDarkImage.swift */,
+				E71583602C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		E71583622C0FA7DA00EADFF7 /* Verification */ = {
+			isa = PBXGroup;
+			children = (
+				E71583632C0FA81E00EADFF7 /* VerificationView.swift */,
+			);
+			path = Verification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
+				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
 				E715834E2C0FA25B00EADFF7 /* WBMessengerApp.swift in Sources */,
+				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
+				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
+				E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
