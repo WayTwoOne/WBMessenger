@@ -9,18 +9,21 @@ import SwiftUI
 
 struct WalkthroughView: View {
     @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack(spacing: 35) {
             Spacer()
             Spacer()
+            
             LightOrDarkImage()
+            
             Text("Общайтесь с друзьями и близкими легко")
                 .font(.system(size: 24))
                 .bold()
-                .multilineTextAlignment(.center)
-                .foregroundColor(colorScheme == .dark ? Color(.white) : Color(.black))
             UserAgreementAndButtonView()
         }
+        .multilineTextAlignment(.center)
+        .foregroundColor(colorScheme == .dark ? Color(.white) : Color(.black))
     }
 }
 

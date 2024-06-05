@@ -10,18 +10,17 @@ import SwiftUI
 struct UserAgreementAndButtonView: View {
     @State var isPresented = false
     @Environment(\.colorScheme) var colorScheme
+    
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
     
     var body: some View {
         VStack() {
             Spacer()
-            Text("Польззовательское соглашение")
+            Text("Пользовательское соглашение")
                 .font(.system(size: 14))
                 .bold()
-                .multilineTextAlignment(.center)
                 .padding()
-                .foregroundColor(colorScheme == .dark ? Color(.white) : Color(.black))
             Button {
                 isPresented.toggle()
             } label: {
