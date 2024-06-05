@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VerificationView: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -19,6 +20,9 @@ struct VerificationView: View {
                             dismiss()
                         } label: {
                             Image("vector")
+                                .renderingMode(.template)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                            
                             
                         }
                     }
