@@ -13,5 +13,6 @@ struct Contacts {
     var lastSeenOnline: Date?
     var isOnline: Bool
     var didStory: Bool
+    var hasAvatar: Bool
     var avatar: String?
 }

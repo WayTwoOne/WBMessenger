@@ -11,44 +11,44 @@ struct ContactsRow: View {
     var contact: Contacts
     
     var body: some View {
-        HStack {
-            ZStack {
-                Image(contact.name)
-                    .resizable()
-                    .frame(width: 48, height: 48)
-                ZStack {
-                    Circle()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                    Circle()
-                        .frame(width: 15, height: 15)
-                        .foregroundColor(.green)
-                        
-                }
+        HStack(alignment: .center, spacing: 10) {
+            if contact.hasAvatar {
+                AvatarView(contact: contact)
+            } else {
+                WithoutAvatarView(contact: contact)
+            }
+            VStack(alignment: .leading) {
+                Text(contact.name)
+                    .font(.system(size: 14))
+                    .padding(.vertical, 1)
+                Text(getDate(with: contact.lastSeenOnline))
+                    .font(.system(size: 12))
+//                    .foregroundColor(Color(red: 173, green: 181, blue: 189))
+                    .foregroundColor(.black)
                     
             }
-            VStack {
-                Text(contact.name)
-                Text(getDate(with: contact.lastSeenOnline))
-                    .opacity(contact.isOnline ? 1 : 1)
-            }
+            
+            .padding(.bottom, 10)
         }
     }
     
     private func getDate(with date: Date?) -> String {
-        guard let date = date else { return "" }
+        guard let date = date else { return "Online" }
         var string = ""
         let dateMinute = Calendar.current.dateComponents([.minute], from: date, to: Date.now)
         let dateHour = Calendar.current.dateComponents([.hour], from: date, to: Date.now)
+        guard let hour = dateHour.hour else { return "0"}
         
-        if dateHour.hour ?? 0 >= 24 {
+        switch hour {
+        case 24... :
             string = "Last seen yesterday"
-        } else if dateHour.hour ?? 0 <= 24 {
-            let hours = dateHour.hour ?? 0
-            string = "Last seen \(hours) hours ago"
-        } else if dateHour.hour ?? 0 <= 1 {
+        case 1...24 :
+            string = "Last seen \(hour) hours ago"
+        case ..<1 :
             let minutes = dateMinute.minute ?? 0
             string = "Last seen \(minutes) minutes ago"
+        default:
+            break
         }
 
         return string
@@ -57,6 +57,6 @@ struct ContactsRow: View {
 
 struct ContactsRow_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsRow(contact: Contacts(name: "Петя", phoneNumber: "+7 999 999 99-99", lastSeenOnline: nil, isOnline: true, didStory: false))
+        ContactsRow(contact: Contacts(name: "Петя", phoneNumber: "+7 999 999 99-99", lastSeenOnline: nil, isOnline: true, didStory: false, hasAvatar: true))
     }
 }

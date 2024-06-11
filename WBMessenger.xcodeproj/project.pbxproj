@@ -18,8 +18,9 @@
 		E71BBCF22C17677E00CA73EB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF12C17677E00CA73EB /* TabBarView.swift */; };
 		E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF42C17902300CA73EB /* ContactsScreen.swift */; };
 		E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF62C1790B100CA73EB /* ContactsRow.swift */; };
-		E71BBCF92C17954400CA73EB /* PersonWithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* PersonWithoutAvatarView.swift */; };
+		E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* AvatarView.swift */; };
 		E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
+		E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,9 @@
 		E71BBCF12C17677E00CA73EB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E71BBCF42C17902300CA73EB /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		E71BBCF62C1790B100CA73EB /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
-		E71BBCF82C17954400CA73EB /* PersonWithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonWithoutAvatarView.swift; sourceTree = "<group>"; };
+		E71BBCF82C17954400CA73EB /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				E71BBCF62C1790B100CA73EB /* ContactsRow.swift */,
-				E71BBCF82C17954400CA73EB /* PersonWithoutAvatarView.swift */,
+				E71BBCF82C17954400CA73EB /* AvatarView.swift */,
+				E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */,
+				E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */,
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
 				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
 				E71BBCF22C17677E00CA73EB /* TabBarView.swift in Sources */,
@@ -237,7 +241,7 @@
 				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
 				E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
-				E71BBCF92C17954400CA73EB /* PersonWithoutAvatarView.swift in Sources */,
+				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
 				E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
