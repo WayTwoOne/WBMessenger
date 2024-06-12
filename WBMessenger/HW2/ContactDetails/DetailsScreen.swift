@@ -9,13 +9,32 @@ import SwiftUI
 
 struct DetailsScreen: View {
     let contact: Contacts
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
-        VStack(spacing: 60) {
-            DetailsAvatarView(contact: contact)
-            DetailsView(contact: contact)
-            SocialNetworkView()
-                .padding(.top, -20)
+        NavigationStack {
+            VStack(spacing: 60) {
+                DetailsAvatarView(contact: contact)
+                DetailsView(contact: contact)
+                SocialNetworkView()
+                    .padding(.top, -20)
+            }
+            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        HStack {
+                            Image("vector")
+                            Text("Контакты")
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+            }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

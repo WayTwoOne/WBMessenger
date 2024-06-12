@@ -18,6 +18,7 @@ let contacts: [Contacts] = [
 
 struct ContactsVIew: View {
     @State private var searchText = ""
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         NavigationStack {
