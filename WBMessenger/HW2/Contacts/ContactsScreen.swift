@@ -16,7 +16,7 @@ let contacts: [Contacts] = [
     Contacts(name: "Лиса Алиса", phoneNumber: "+7 999 999 99-99", lastSeenOnline: Date(timeIntervalSinceNow: -1800), isOnline: false, didStory: true, hasAvatar: false),
 ]
 
-struct ContactsVIew: View {
+struct ContactsScreen: View {
     @State private var searchText = ""
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -59,6 +59,6 @@ struct ContactsVIew: View {
 
 struct ContactsVIew_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsVIew()
+        ContactsScreen()
     }
 }

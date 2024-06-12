@@ -26,32 +26,28 @@ let tabBarTwo = [
 
 struct TabBarView: View {
     var body: some View {
-        VStack {
-            HStack {
-                ForEach(tabBar) { bar in
-                    Button {
-                        ()
-                    } label: {
-                        Image(bar.iconName)
-                            .resizable()
-                    }
+        TabView {
+            ContactsScreen()
+                .tabItem {
+                    Image("person.2")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 10, height: 30)
                 }
-            }
-            .frame(width: 120, height: 30)
-            
-            HStack {
-                ForEach(tabBarTwo) { bar in
-                    Button {
-                        ()
-                    } label: {
-                        Image(systemName: bar.iconName)
-                            .resizable()
-                            .frame(width: 30, height: 20)
-                           
-                    }
+            Text("Message")
+                .tabItem {
+                    Image("message")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 10, height: 30)
                 }
-            }
-            
+            Text("ellipsis")
+                .tabItem {
+                    Image("ellipsis")
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 10, height: 30)
+                }
         }
     }
 }

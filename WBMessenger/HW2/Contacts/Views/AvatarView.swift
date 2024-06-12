@@ -18,8 +18,8 @@ struct AvatarView: View {
                 .overlay(alignment: .center, content: {
                     RoundedRectangle(cornerRadius: 17)
                         .stroke(lineWidth: 2.5)
-    //                    .foregroundColor(Color(red: 154, green: 65, blue: 254))
-                        .foregroundColor(.green)
+                        .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                        
                         .opacity(contact.didStory ? 1 : 0)
                 })
             ZStack {

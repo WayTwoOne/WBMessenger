@@ -21,8 +21,8 @@ struct DetailsAvatarView: View {
                     .background {
                         Circle()
                             .frame(width: 200, height: 200)
-                        //                .foregroundColor(Color(red: 247, green: 247, blue: 252))
-                            .foregroundColor(.gray)
+                                        .foregroundColor(Color(red: 247, green: 247, blue: 252))
+                            
                     }
             }
         case true:
@@ -33,8 +33,8 @@ struct DetailsAvatarView: View {
                     .background {
                         Circle()
                             .frame(width: 200, height: 200)
-                        //                .foregroundColor(Color(red: 247, green: 247, blue: 252))
-                            .foregroundColor(.gray)
+                                        .foregroundColor(Color(red: 247, green: 247, blue: 252))
+                           
                     }
             }
         }

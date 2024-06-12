@@ -15,8 +15,8 @@ struct WithoutAvatarView: View {
             ZStack {
                 Rectangle()
                     .frame(width: 56, height: 56)
-                //                .foregroundColor(Color(red: 154, green: 65, blue: 254))
-                    .foregroundColor(.black)
+                                .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                   
                 Text(getInitials(from:contact.name))
                     .foregroundColor(.white)
             }
@@ -25,8 +25,8 @@ struct WithoutAvatarView: View {
             .overlay(alignment: .center, content: {
                 RoundedRectangle(cornerRadius: 17)
                     .stroke(lineWidth: 2.5)
-//                    .foregroundColor(Color(red: 154, green: 65, blue: 254))
-                    .foregroundColor(.green)
+                    .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                    
                     .opacity(contact.didStory ? 1 : 0)
             })
             

@@ -20,8 +20,7 @@ struct SocialNetworkView: View {
                         .renderingMode(.template)
                         .resizable()
                         .frame(width: 25, height: 25)
-                        .foregroundColor(.purple)
-//                        .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                        .foregroundColor(Color(red: 154, green: 65, blue: 254))
                         .background(content: {
                             Rectangle()
                                 .frame(width: 70, height: 40, alignment: .center)
@@ -33,8 +32,7 @@ struct SocialNetworkView: View {
                                 })
                         })
                 }
-                .foregroundColor(.purple)
-//                .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                .foregroundColor(Color(red: 154, green: 65, blue: 254))
                 .padding(.horizontal, 30)
             }
         }

@@ -32,6 +32,11 @@ struct DetailsScreen: View {
                         }
                     }
                 }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "pencil")
+                        .bold()
+                }
             }
         }
         .navigationBarBackButtonHidden()

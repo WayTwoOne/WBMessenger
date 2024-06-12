@@ -16,8 +16,8 @@ struct DetailsView: View {
                 .foregroundColor(.black)
                 Text(contact.phoneNumber)
                 .font(.system(size: 16))
-//                .foregroundColor(Color(red: 173, green: 181, blue: 189))
-                .foregroundColor(.black)
+                .foregroundColor(Color(red: 173, green: 181, blue: 189))
+                
             
         }
     }
