@@ -20,17 +20,41 @@ struct ContactsVIew: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(contacts, id: \.name) { contact in
                 ContactsRow(contact: contact)
-                
+                    .padding(.leading, -20)
+                    .background {
+                        NavigationLink {
+                            DetailsScreen(contact: contact)
+                        } label: {
+                            Text("")
+                        }
+                    }
             }
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Контакты")
+                        .font(.system(size: 20))
+                        .bold()
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {}) {
+                        Text("+")
+                            .foregroundColor(.black)
+                            .font(.system(size: 24))
+                            .bold()
+                    }
+                }
+            })
         }
-        .navigationTitle("Контакты")
-        .searchable(text: $searchText)
         
+        .searchable(text: $searchText)
     }
+    
 }
+
 
 struct ContactsVIew_Previews: PreviewProvider {
     static var previews: some View {
