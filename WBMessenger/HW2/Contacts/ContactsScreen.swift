@@ -30,8 +30,9 @@ struct ContactsScreen: View {
                         NavigationLink {
                             DetailsScreen(contact: contact)
                         } label: {
-                            Text("2345")
+                            Text("")
                         }
+                        .opacity(0)
                     }
                 
             }
