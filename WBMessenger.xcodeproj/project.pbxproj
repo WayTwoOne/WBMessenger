@@ -19,12 +19,13 @@
 		E718404E2C19CB61005246C8 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404D2C19CB61005246C8 /* DetailsView.swift */; };
 		E71840502C19E90F005246C8 /* DetailsAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404F2C19E90F005246C8 /* DetailsAvatarView.swift */; };
 		E71840522C19EA80005246C8 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71840512C19EA80005246C8 /* SocialNetworkView.swift */; };
-		E71BBCF22C17677E00CA73EB /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF12C17677E00CA73EB /* TabBarView.swift */; };
 		E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF42C17902300CA73EB /* ContactsScreen.swift */; };
 		E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF62C1790B100CA73EB /* ContactsRow.swift */; };
 		E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* AvatarView.swift */; };
 		E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
 		E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */; };
+		E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
+		E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
 		E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,12 +43,13 @@
 		E718404D2C19CB61005246C8 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		E718404F2C19E90F005246C8 /* DetailsAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAvatarView.swift; sourceTree = "<group>"; };
 		E71840512C19EA80005246C8 /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
-		E71BBCF12C17677E00CA73EB /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		E71BBCF42C17902300CA73EB /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		E71BBCF62C1790B100CA73EB /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
 		E71BBCF82C17954400CA73EB /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW2.swift; sourceTree = "<group>"; };
+		E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +153,8 @@
 		E71BBCF02C17676B00CA73EB /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				E71BBCF12C17677E00CA73EB /* TabBarView.swift */,
+				E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */,
+				E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -261,10 +264,11 @@
 				E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */,
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
 				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
-				E71BBCF22C17677E00CA73EB /* TabBarView.swift in Sources */,
 				E718404C2C19CB53005246C8 /* DetailsScreen.swift in Sources */,
+				E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */,
 				E715834E2C0FA25B00EADFF7 /* WBMessengerApp.swift in Sources */,
 				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
+				E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */,
 				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
 				E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,

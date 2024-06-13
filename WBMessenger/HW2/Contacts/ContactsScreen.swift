@@ -22,7 +22,6 @@ struct ContactsScreen: View {
     
     var body: some View {
         NavigationStack {
-            
             List(contacts, id: \.name) { contact in
                 ContactsRow(contact: contact)
                     .padding(.leading, -20)
@@ -53,7 +52,6 @@ struct ContactsScreen: View {
                 }
             })
         }
-        .searchable(text: $searchText)
     }
     
 }

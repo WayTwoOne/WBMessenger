@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentViewHW2: View {
+    @State private var tabSelected = 1
+    @State private var searchText = ""
     var body: some View {
-        TabBarView()
+        NavigationStack{
+            ContactsScreen()
+            CustomTabBarView(tabSelcted: $tabSelected)
+            
+        }
+        .searchable(text: $searchText)
     }
 }
 
