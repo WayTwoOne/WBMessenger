@@ -18,37 +18,36 @@ let tabBar = [
     TabBarIcons(iconName: "more")
 ]
 
-let tabBarTwo = [
-    TabBarIcons(iconName: "person.2"),
-    TabBarIcons(iconName: "message"),
-    TabBarIcons(iconName: "ellipsis")
-]
-
 struct TabBarView: View {
     var body: some View {
         TabView {
             ContactsScreen()
                 .tabItem {
                     Image("person.2")
-                        .resizable()
+                    
                         .renderingMode(.template)
-                        .frame(width: 10, height: 30)
+                        .frame(width: 20, height: 0)
                 }
-            Text("Message")
+            Text("message")
                 .tabItem {
                     Image("message")
                         .resizable()
                         .renderingMode(.template)
-                        .frame(width: 10, height: 30)
+                        .frame(width: 40, height: 40)
                 }
-            Text("ellipsis")
+            Text("more")
                 .tabItem {
-                    Image("ellipsis")
+                    Image("more")
                         .resizable()
                         .renderingMode(.template)
-                        .frame(width: 10, height: 30)
+                        .frame(width: 40, height: 40)
                 }
         }
+        .foregroundColor(.black)
+        .onAppear {
+            UITabBar.appearance().barTintColor = .black
+        }
+        .accentColor(Color(red: 154, green: 65, blue: 254))
     }
 }
 

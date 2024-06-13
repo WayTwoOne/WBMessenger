@@ -23,8 +23,8 @@ struct ContactsRow: View {
                     .padding(.vertical, 1)
                 Text(getDate(with: contact.lastSeenOnline))
                     .font(.system(size: 12))
-//                    .foregroundColor(Color(red: 173, green: 181, blue: 189))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color(red: 173, green: 181, blue: 189))
+                   
                     
             }
             

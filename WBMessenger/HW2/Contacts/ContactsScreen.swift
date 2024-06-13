@@ -22,6 +22,7 @@ struct ContactsScreen: View {
     
     var body: some View {
         NavigationStack {
+            
             List(contacts, id: \.name) { contact in
                 ContactsRow(contact: contact)
                     .padding(.leading, -20)
@@ -29,9 +30,10 @@ struct ContactsScreen: View {
                         NavigationLink {
                             DetailsScreen(contact: contact)
                         } label: {
-                            Text("")
+                            Text("2345")
                         }
                     }
+                
             }
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -50,7 +52,6 @@ struct ContactsScreen: View {
                 }
             })
         }
-        
         .searchable(text: $searchText)
     }
     

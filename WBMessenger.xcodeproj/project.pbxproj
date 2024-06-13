@@ -24,6 +24,7 @@
 		E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF62C1790B100CA73EB /* ContactsRow.swift */; };
 		E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* AvatarView.swift */; };
 		E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
+		E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */; };
 		E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		E71BBCF62C1790B100CA73EB /* ContactsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRow.swift; sourceTree = "<group>"; };
 		E71BBCF82C17954400CA73EB /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW2.swift; sourceTree = "<group>"; };
 		E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 		E71BBCEF2C1766FF00CA73EB /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
+				E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */,
 				E718404A2C19CB31005246C8 /* ContactDetails */,
 				E71BBCF32C17900500CA73EB /* Contacts */,
 				E71BBCF02C17676B00CA73EB /* CustomTabBar */,
@@ -267,6 +270,7 @@
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
 				E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */,
+				E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
