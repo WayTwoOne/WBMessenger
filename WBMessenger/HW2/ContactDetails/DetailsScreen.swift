@@ -9,10 +9,10 @@ import SwiftUI
 
 struct DetailsScreen: View {
     let contact: Contacts
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var router: Router
+    
     
     var body: some View {
-        NavigationStack {
             VStack(spacing: 60) {
                 DetailsAvatarView(contact: contact)
                 DetailsView(contact: contact)
@@ -23,13 +23,14 @@ struct DetailsScreen: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
-                        self.presentationMode.wrappedValue.dismiss()
+                        router.goBack()
                     } label: {
                         HStack {
                             Image("vector")
                             Text("Контакты")
                                 .foregroundColor(.black)
                         }
+                        .bold()
                     }
                 }
                 
@@ -38,7 +39,6 @@ struct DetailsScreen: View {
                         .bold()
                 }
             }
-        }
         .navigationBarBackButtonHidden()
     }
 }

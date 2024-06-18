@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContactsRow: View {
-    var contact: Contacts
+    let contact: Contacts
     
     var body: some View {
         HStack(alignment: .center, spacing: 10) {

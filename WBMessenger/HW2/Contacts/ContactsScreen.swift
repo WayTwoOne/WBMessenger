@@ -18,40 +18,46 @@ let contacts: [Contacts] = [
 
 struct ContactsScreen: View {
     @State private var searchText = ""
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var router: Router
     
     var body: some View {
-        NavigationStack {
-            List(contacts, id: \.name) { contact in
-                ContactsRow(contact: contact)
-                    .padding(.leading, -20)
-                    .background {
-                        NavigationLink {
-                            DetailsScreen(contact: contact)
-                        } label: {
-                            Text("")
-                        }
-                        .opacity(0)
-                    }
-                
+        List(contacts, id: \.name) { contact in
+            ContactsRow(contact: contact)
+                .padding(.leading, -20)
+                .background {
+                    Button("", action: {
+                        router.push(.contactsDetails(contact))
+                    })
+                    .opacity(0)
+                }
+            
+        }
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text("Контакты")
+                    .font(.system(size: 20))
+                    .bold()
             }
-            .toolbar(content: {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Контакты")
-                        .font(.system(size: 20))
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                //                    NavigationLink {
+                //                        NewContactView()
+                //                    } label: {
+                //                        Text("+")
+                //                            .foregroundColor(.black)
+                //                            .font(.system(size: 24))
+                //                            .bold()
+                //                    }
+                Button(action: {
+                    router.push(.addNewContact)
+                }) {
+                    Text("+")
+                        .foregroundColor(.black)
+                        .font(.system(size: 24))
                         .bold()
                 }
-                
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {}) {
-                        Text("+")
-                            .foregroundColor(.black)
-                            .font(.system(size: 24))
-                            .bold()
-                    }
-                }
-            })
-        }
+            }
+        })
     }
     
 }
