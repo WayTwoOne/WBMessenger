@@ -30,7 +30,6 @@ struct ContactsScreen: View {
                     })
                     .opacity(0)
                 }
-            
         }
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -40,14 +39,6 @@ struct ContactsScreen: View {
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {
-                //                    NavigationLink {
-                //                        NewContactView()
-                //                    } label: {
-                //                        Text("+")
-                //                            .foregroundColor(.black)
-                //                            .font(.system(size: 24))
-                //                            .bold()
-                //                    }
                 Button(action: {
                     router.push(.addNewContact)
                 }) {

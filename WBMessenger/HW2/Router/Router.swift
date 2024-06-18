@@ -39,9 +39,3 @@ final class Router: ObservableObject {
 enum MyPage: Hashable {
     case contactsList, contactsDetails(Contacts), addNewContact
 }
-
-//enum MyPage: String, CaseIterable, Identifiable {
-//    case home, currentVacansy, vacancy
-//
-//    var id: String { self.rawValue }
-//}
