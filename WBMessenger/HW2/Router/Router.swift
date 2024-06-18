@@ -10,6 +10,7 @@ import SwiftUI
 final class Router: ObservableObject {
     
     @Published var path = NavigationPath()
+    @Published var homeScreen: MyPage = .contactsList
     
     func push(_ page: MyPage) {
         path.append(page)
