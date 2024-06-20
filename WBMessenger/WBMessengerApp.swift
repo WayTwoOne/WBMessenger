@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct WBMessengerApp: App {
-    let newContact = NewContactView()
     var body: some Scene {
         WindowGroup {
             ContentViewHW2()

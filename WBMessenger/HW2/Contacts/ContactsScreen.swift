@@ -7,17 +7,9 @@
 
 import SwiftUI
 
-let contacts: [Contacts] = [
-    Contacts(name: "Анастасия Иванова", phoneNumber: "+7 999 999 99-99", lastSeenOnline: Date(timeIntervalSinceNow: -80400), isOnline: false, didStory: false, hasAvatar: true),
-    Contacts(name: "Петя", phoneNumber: "+7 999 999 99-99", lastSeenOnline: nil, isOnline: true, didStory: false, hasAvatar: true),
-    Contacts(name: "Маман", phoneNumber: "+7 999 999 99-99", lastSeenOnline: Date(timeIntervalSinceNow: -10800), isOnline: false, didStory: true, hasAvatar: true),
-    Contacts(name: "Арбуз Дыня", phoneNumber: "+7 999 999 99-99", lastSeenOnline: nil, isOnline: true, didStory: false, hasAvatar: true),
-    Contacts(name: "Иван Иванов", phoneNumber: "+7 999 999 99-99", lastSeenOnline: nil, isOnline: true, didStory: false, hasAvatar: false),
-    Contacts(name: "Лиса Алиса", phoneNumber: "+7 999 999 99-99", lastSeenOnline: Date(timeIntervalSinceNow: -1800), isOnline: false, didStory: true, hasAvatar: false),
-]
-
 struct ContactsScreen: View {
     @State private var searchText = ""
+    @State private var contacts = Contacts.getContacts()
     @EnvironmentObject var router: Router
     
     var body: some View {
@@ -26,7 +18,7 @@ struct ContactsScreen: View {
                 .padding(.leading, -20)
                 .background {
                     Button("", action: {
-                        router.push(.contactsDetails(contact))
+                        router.homeScreen = .addNewContact
                     })
                     .opacity(0)
                 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E715834E2C0FA25B00EADFF7 /* WBMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */; };
 		E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715834F2C0FA25B00EADFF7 /* ContentView.swift */; };
 		E71583522C0FA25C00EADFF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71583512C0FA25C00EADFF7 /* Assets.xcassets */; };
 		E71583552C0FA25C00EADFF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71583542C0FA25C00EADFF7 /* Preview Assets.xcassets */; };
@@ -24,46 +23,36 @@
 		E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* AvatarView.swift */; };
 		E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
 		E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */; };
-		E738BC3E2C21D33C00B6EC83 /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF42C17902300CA73EB /* ContactsScreen.swift */; };
-		E738BC3F2C21D35800B6EC83 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
-		E738BC412C21D37000B6EC83 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
-		E738BC422C21D37600B6EC83 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293972C2195F4008A95EA /* CounterView.swift */; };
-		E738BC432C21D38A00B6EC83 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404B2C19CB53005246C8 /* DetailsScreen.swift */; };
-		E738BC442C21D38C00B6EC83 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404D2C19CB61005246C8 /* DetailsView.swift */; };
-		E738BC452C21D38E00B6EC83 /* DetailsAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404F2C19E90F005246C8 /* DetailsAvatarView.swift */; };
-		E738BC462C21D39000B6EC83 /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71840512C19EA80005246C8 /* SocialNetworkView.swift */; };
-		E738BC492C21D39F00B6EC83 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
-		E738BC4A2C21D3A200B6EC83 /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
-		E738BC4B2C21D44C00B6EC83 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF82C17954400CA73EB /* AvatarView.swift */; };
-		E738BC4C2C21D45000B6EC83 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
-		E738BC4D2C21D45400B6EC83 /* ContactsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCF62C1790B100CA73EB /* ContactsRow.swift */; };
 		E738BC502C21D7D300B6EC83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC4F2C21D7D300B6EC83 /* Router.swift */; };
-		E738BC512C21E6F800B6EC83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC4F2C21D7D300B6EC83 /* Router.swift */; };
-		E738BC552C22279600B6EC83 /* UserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC542C22279600B6EC83 /* UserDatabase.swift */; };
-		E738BC562C22279600B6EC83 /* UserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC542C22279600B6EC83 /* UserDatabase.swift */; };
-		E75293982C2195F4008A95EA /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293972C2195F4008A95EA /* CounterView.swift */; };
-		E75293BF2C219932008A95EA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75293BE2C219932008A95EA /* WidgetKit.framework */; };
-		E75293C02C219932008A95EA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E752937E2C21949B008A95EA /* SwiftUI.framework */; };
-		E75293C32C219932008A95EA /* ColorWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293C22C219932008A95EA /* ColorWidgetBundle.swift */; };
-		E75293C52C219932008A95EA /* ColorWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293C42C219932008A95EA /* ColorWidgetLiveActivity.swift */; };
-		E75293C72C219932008A95EA /* ColorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293C62C219932008A95EA /* ColorWidget.swift */; };
-		E75293CA2C219933008A95EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75293C92C219933008A95EA /* Assets.xcassets */; };
-		E75293CC2C219933008A95EA /* ColorWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E75293C82C219932008A95EA /* ColorWidget.intentdefinition */; };
-		E75293CD2C219933008A95EA /* ColorWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E75293C82C219932008A95EA /* ColorWidget.intentdefinition */; };
-		E75293D02C219933008A95EA /* ColorWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E75293BD2C219932008A95EA /* ColorWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
 		E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
 		E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
 		E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
+		E78557682C245D7300AF6FD9 /* WBMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */; };
+		E7FA9BFB2C247D1D0096E1DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FA9BFA2C247D1D0096E1DD /* WidgetKit.framework */; };
+		E7FA9BFD2C247D1D0096E1DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FA9BFC2C247D1D0096E1DD /* SwiftUI.framework */; };
+		E7FA9C002C247D1D0096E1DD /* ContactsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9BFF2C247D1D0096E1DD /* ContactsWidgetBundle.swift */; };
+		E7FA9C022C247D1D0096E1DD /* ContactsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C012C247D1D0096E1DD /* ContactsWidget.swift */; };
+		E7FA9C042C247D1E0096E1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FA9C032C247D1E0096E1DD /* Assets.xcassets */; };
+		E7FA9C082C247D1E0096E1DD /* ContactsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E7FA9BF82C247D1D0096E1DD /* ContactsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7FA9C0E2C247D6B0096E1DD /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C0C2C247D410096E1DD /* Provider.swift */; };
+		E7FA9C132C247DD60096E1DD /* ContactsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C112C247DBD0096E1DD /* ContactsWidgetView.swift */; };
+		E7FA9C142C247DD80096E1DD /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C0F2C247D9A0096E1DD /* SimpleEntry.swift */; };
+		E7FA9C162C2482F30096E1DD /* SmallSizeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C152C2482F30096E1DD /* SmallSizeWidgetView.swift */; };
+		E7FA9C182C2483040096E1DD /* LargeSizeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C172C2483040096E1DD /* LargeSizeWidgetView.swift */; };
+		E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C0F2C247D9A0096E1DD /* SimpleEntry.swift */; };
+		E7FA9C1D2C24880B0096E1DD /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C0C2C247D410096E1DD /* Provider.swift */; };
+		E7FA9C1E2C248D530096E1DD /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
+		E7FA9C202C2493A00096E1DD /* MediumSizeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FA9C1F2C2493A00096E1DD /* MediumSizeWidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E75293CE2C219933008A95EA /* PBXContainerItemProxy */ = {
+		E7FA9C062C247D1E0096E1DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E71583422C0FA25B00EADFF7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E75293BC2C219932008A95EA;
-			remoteInfo = ColorWidgetExtension;
+			remoteGlobalIDString = E7FA9BF72C247D1D0096E1DD;
+			remoteInfo = ContactsWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -74,7 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E75293D02C219933008A95EA /* ColorWidgetExtension.appex in Embed Foundation Extensions */,
+				E7FA9C082C247D1E0096E1DD /* ContactsWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,22 +90,23 @@
 		E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW2.swift; sourceTree = "<group>"; };
 		E738BC4F2C21D7D300B6EC83 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		E738BC522C2225A300B6EC83 /* WBMessenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WBMessenger.entitlements; sourceTree = "<group>"; };
-		E738BC542C22279600B6EC83 /* UserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabase.swift; sourceTree = "<group>"; };
-		E752937E2C21949B008A95EA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		E75293972C2195F4008A95EA /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		E75293BD2C219932008A95EA /* ColorWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ColorWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		E75293BE2C219932008A95EA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		E75293C22C219932008A95EA /* ColorWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWidgetBundle.swift; sourceTree = "<group>"; };
-		E75293C42C219932008A95EA /* ColorWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		E75293C62C219932008A95EA /* ColorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWidget.swift; sourceTree = "<group>"; };
-		E75293C82C219932008A95EA /* ColorWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ColorWidget.intentdefinition; sourceTree = "<group>"; };
-		E75293C92C219933008A95EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E75293CB2C219933008A95EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75293D52C21C6B1008A95EA /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAvatarView.swift; sourceTree = "<group>"; };
+		E7FA9BF82C247D1D0096E1DD /* ContactsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FA9BFA2C247D1D0096E1DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E7FA9BFC2C247D1D0096E1DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E7FA9BFF2C247D1D0096E1DD /* ContactsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsWidgetBundle.swift; sourceTree = "<group>"; };
+		E7FA9C012C247D1D0096E1DD /* ContactsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsWidget.swift; sourceTree = "<group>"; };
+		E7FA9C032C247D1E0096E1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7FA9C052C247D1E0096E1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FA9C0C2C247D410096E1DD /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		E7FA9C0F2C247D9A0096E1DD /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		E7FA9C112C247DBD0096E1DD /* ContactsWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsWidgetView.swift; sourceTree = "<group>"; };
+		E7FA9C152C2482F30096E1DD /* SmallSizeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallSizeWidgetView.swift; sourceTree = "<group>"; };
+		E7FA9C172C2483040096E1DD /* LargeSizeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSizeWidgetView.swift; sourceTree = "<group>"; };
+		E7FA9C1F2C2493A00096E1DD /* MediumSizeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumSizeWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +117,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75293BA2C219932008A95EA /* Frameworks */ = {
+		E7FA9BF52C247D1D0096E1DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75293C02C219932008A95EA /* SwiftUI.framework in Frameworks */,
-				E75293BF2C219932008A95EA /* WidgetKit.framework in Frameworks */,
+				E7FA9BFD2C247D1D0096E1DD /* SwiftUI.framework in Frameworks */,
+				E7FA9BFB2C247D1D0096E1DD /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +132,6 @@
 		E70E028E2C1C7AF900A1D238 /* HW3 */ = {
 			isa = PBXGroup;
 			children = (
-				E738BC532C22277000B6EC83 /* Services */,
-				E75293972C2195F4008A95EA /* CounterView.swift */,
 			);
 			path = HW3;
 			sourceTree = "<group>";
@@ -152,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				E715834C2C0FA25B00EADFF7 /* WBMessenger */,
-				E75293C12C219932008A95EA /* ColorWidget */,
-				E752937B2C21949B008A95EA /* Frameworks */,
+				E7FA9BFE2C247D1D0096E1DD /* ContactsWidget */,
+				E7FA9BF92C247D1D0096E1DD /* Frameworks */,
 				E715834B2C0FA25B00EADFF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E715834A2C0FA25B00EADFF7 /* WBMessenger.app */,
-				E75293BD2C219932008A95EA /* ColorWidgetExtension.appex */,
+				E7FA9BF82C247D1D0096E1DD /* ContactsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,8 +158,6 @@
 		E715834C2C0FA25B00EADFF7 /* WBMessenger */ = {
 			isa = PBXGroup;
 			children = (
-				E738BC522C2225A300B6EC83 /* WBMessenger.entitlements */,
-				E715834F2C0FA25B00EADFF7 /* ContentView.swift */,
 				E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */,
 				E71BBCEE2C1766D200CA73EB /* HW1 */,
 				E71BBCEF2C1766FF00CA73EB /* HW2 */,
@@ -222,6 +208,7 @@
 		E71BBCEE2C1766D200CA73EB /* HW1 */ = {
 			isa = PBXGroup;
 			children = (
+				E715834F2C0FA25B00EADFF7 /* ContentView.swift */,
 				E71583622C0FA7DA00EADFF7 /* Verification */,
 				E715835F2C0FA4BB00EADFF7 /* Walkthrough */,
 			);
@@ -286,42 +273,46 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		E738BC532C22277000B6EC83 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				E738BC542C22279600B6EC83 /* UserDatabase.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		E752937B2C21949B008A95EA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E752937E2C21949B008A95EA /* SwiftUI.framework */,
-				E75293BE2C219932008A95EA /* WidgetKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E75293C12C219932008A95EA /* ColorWidget */ = {
-			isa = PBXGroup;
-			children = (
-				E75293C22C219932008A95EA /* ColorWidgetBundle.swift */,
-				E75293C42C219932008A95EA /* ColorWidgetLiveActivity.swift */,
-				E75293C62C219932008A95EA /* ColorWidget.swift */,
-				E75293C82C219932008A95EA /* ColorWidget.intentdefinition */,
-				E75293C92C219933008A95EA /* Assets.xcassets */,
-				E75293CB2C219933008A95EA /* Info.plist */,
-			);
-			path = ColorWidget;
-			sourceTree = "<group>";
-		};
 		E75293D42C21C697008A95EA /* AddANewContact */ = {
 			isa = PBXGroup;
 			children = (
 				E75293D52C21C6B1008A95EA /* NewContactView.swift */,
 			);
 			path = AddANewContact;
+			sourceTree = "<group>";
+		};
+		E7FA9BF92C247D1D0096E1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7FA9BFA2C247D1D0096E1DD /* WidgetKit.framework */,
+				E7FA9BFC2C247D1D0096E1DD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FA9BFE2C247D1D0096E1DD /* ContactsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E7FA9BFF2C247D1D0096E1DD /* ContactsWidgetBundle.swift */,
+				E7FA9C012C247D1D0096E1DD /* ContactsWidget.swift */,
+				E7FA9C032C247D1E0096E1DD /* Assets.xcassets */,
+				E7FA9C052C247D1E0096E1DD /* Info.plist */,
+				E7FA9C0C2C247D410096E1DD /* Provider.swift */,
+				E7FA9C0F2C247D9A0096E1DD /* SimpleEntry.swift */,
+				E7FA9C192C2483180096E1DD /* Views */,
+			);
+			path = ContactsWidget;
+			sourceTree = "<group>";
+		};
+		E7FA9C192C2483180096E1DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7FA9C112C247DBD0096E1DD /* ContactsWidgetView.swift */,
+				E7FA9C152C2482F30096E1DD /* SmallSizeWidgetView.swift */,
+				E7FA9C1F2C2493A00096E1DD /* MediumSizeWidgetView.swift */,
+				E7FA9C172C2483040096E1DD /* LargeSizeWidgetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,28 +330,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				E75293CF2C219933008A95EA /* PBXTargetDependency */,
+				E7FA9C072C247D1E0096E1DD /* PBXTargetDependency */,
 			);
 			name = WBMessenger;
 			productName = WBMessenger;
 			productReference = E715834A2C0FA25B00EADFF7 /* WBMessenger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E75293BC2C219932008A95EA /* ColorWidgetExtension */ = {
+		E7FA9BF72C247D1D0096E1DD /* ContactsWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E75293D12C219934008A95EA /* Build configuration list for PBXNativeTarget "ColorWidgetExtension" */;
+			buildConfigurationList = E7FA9C092C247D1E0096E1DD /* Build configuration list for PBXNativeTarget "ContactsWidgetExtension" */;
 			buildPhases = (
-				E75293B92C219932008A95EA /* Sources */,
-				E75293BA2C219932008A95EA /* Frameworks */,
-				E75293BB2C219932008A95EA /* Resources */,
+				E7FA9BF42C247D1D0096E1DD /* Sources */,
+				E7FA9BF52C247D1D0096E1DD /* Frameworks */,
+				E7FA9BF62C247D1D0096E1DD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ColorWidgetExtension;
-			productName = ColorWidgetExtension;
-			productReference = E75293BD2C219932008A95EA /* ColorWidgetExtension.appex */;
+			name = ContactsWidgetExtension;
+			productName = ContactsWidgetExtension;
+			productReference = E7FA9BF82C247D1D0096E1DD /* ContactsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +367,7 @@
 					E71583492C0FA25B00EADFF7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					E75293BC2C219932008A95EA = {
+					E7FA9BF72C247D1D0096E1DD = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -395,7 +386,7 @@
 			projectRoot = "";
 			targets = (
 				E71583492C0FA25B00EADFF7 /* WBMessenger */,
-				E75293BC2C219932008A95EA /* ColorWidgetExtension */,
+				E7FA9BF72C247D1D0096E1DD /* ContactsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -410,11 +401,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75293BB2C219932008A95EA /* Resources */ = {
+		E7FA9BF62C247D1D0096E1DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75293CA2C219933008A95EA /* Assets.xcassets in Resources */,
+				E7FA9C042C247D1E0096E1DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,57 +424,46 @@
 				E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */,
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
 				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
+				E78557682C245D7300AF6FD9 /* WBMessengerApp.swift in Sources */,
 				E718404C2C19CB53005246C8 /* DetailsScreen.swift in Sources */,
 				E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */,
-				E715834E2C0FA25B00EADFF7 /* WBMessengerApp.swift in Sources */,
 				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
 				E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */,
 				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
 				E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
+				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
-				E75293CD2C219933008A95EA /* ColorWidget.intentdefinition in Sources */,
+				E7FA9C1D2C24880B0096E1DD /* Provider.swift in Sources */,
 				E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */,
 				E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */,
-				E738BC552C22279600B6EC83 /* UserDatabase.swift in Sources */,
-				E75293982C2195F4008A95EA /* CounterView.swift in Sources */,
 				E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75293B92C219932008A95EA /* Sources */ = {
+		E7FA9BF42C247D1D0096E1DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E738BC412C21D37000B6EC83 /* NewContactView.swift in Sources */,
-				E738BC462C21D39000B6EC83 /* SocialNetworkView.swift in Sources */,
-				E75293CC2C219933008A95EA /* ColorWidget.intentdefinition in Sources */,
-				E738BC492C21D39F00B6EC83 /* CustomTabBarView.swift in Sources */,
-				E738BC512C21E6F800B6EC83 /* Router.swift in Sources */,
-				E738BC432C21D38A00B6EC83 /* DetailsScreen.swift in Sources */,
-				E738BC4C2C21D45000B6EC83 /* WithoutAvatarView.swift in Sources */,
-				E75293C72C219932008A95EA /* ColorWidget.swift in Sources */,
-				E75293C52C219932008A95EA /* ColorWidgetLiveActivity.swift in Sources */,
-				E738BC562C22279600B6EC83 /* UserDatabase.swift in Sources */,
-				E738BC4A2C21D3A200B6EC83 /* TabBarIcons.swift in Sources */,
-				E738BC3E2C21D33C00B6EC83 /* ContactsScreen.swift in Sources */,
-				E738BC452C21D38E00B6EC83 /* DetailsAvatarView.swift in Sources */,
-				E738BC442C21D38C00B6EC83 /* DetailsView.swift in Sources */,
-				E738BC4D2C21D45400B6EC83 /* ContactsRow.swift in Sources */,
-				E738BC422C21D37600B6EC83 /* CounterView.swift in Sources */,
-				E738BC3F2C21D35800B6EC83 /* ContactsModel.swift in Sources */,
-				E738BC4B2C21D44C00B6EC83 /* AvatarView.swift in Sources */,
-				E75293C32C219932008A95EA /* ColorWidgetBundle.swift in Sources */,
+				E7FA9C202C2493A00096E1DD /* MediumSizeWidgetView.swift in Sources */,
+				E7FA9C182C2483040096E1DD /* LargeSizeWidgetView.swift in Sources */,
+				E7FA9C162C2482F30096E1DD /* SmallSizeWidgetView.swift in Sources */,
+				E7FA9C132C247DD60096E1DD /* ContactsWidgetView.swift in Sources */,
+				E7FA9C022C247D1D0096E1DD /* ContactsWidget.swift in Sources */,
+				E7FA9C0E2C247D6B0096E1DD /* Provider.swift in Sources */,
+				E7FA9C002C247D1D0096E1DD /* ContactsWidgetBundle.swift in Sources */,
+				E7FA9C1E2C248D530096E1DD /* ContactsModel.swift in Sources */,
+				E7FA9C142C247DD80096E1DD /* SimpleEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E75293CF2C219933008A95EA /* PBXTargetDependency */ = {
+		E7FA9C072C247D1E0096E1DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E75293BC2C219932008A95EA /* ColorWidgetExtension */;
-			targetProxy = E75293CE2C219933008A95EA /* PBXContainerItemProxy */;
+			target = E7FA9BF72C247D1D0096E1DD /* ContactsWidgetExtension */;
+			targetProxy = E7FA9C062C247D1E0096E1DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,6 +575,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -609,10 +590,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WBMessenger/WBMessenger.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBMessenger/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MTSDTCJH7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -620,6 +602,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +611,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,10 +627,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WBMessenger/WBMessenger.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WBMessenger/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MTSDTCJH7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -652,6 +639,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,22 +648,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		E75293D22C219934008A95EA /* Debug */ = {
+		E7FA9C0A2C247D1E0096E1DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTSDTCJH7U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ColorWidget;
+				INFOPLIST_FILE = ContactsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactsWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,7 +676,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger.ColorWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger.ContactsWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -692,16 +685,18 @@
 			};
 			name = Debug;
 		};
-		E75293D32C219934008A95EA /* Release */ = {
+		E7FA9C0B2C247D1E0096E1DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTSDTCJH7U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ColorWidget;
+				INFOPLIST_FILE = ContactsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ContactsWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -709,7 +704,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger.ColorWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2121.WBMessenger.ContactsWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -739,11 +734,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E75293D12C219934008A95EA /* Build configuration list for PBXNativeTarget "ColorWidgetExtension" */ = {
+		E7FA9C092C247D1E0096E1DD /* Build configuration list for PBXNativeTarget "ContactsWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E75293D22C219934008A95EA /* Debug */,
-				E75293D32C219934008A95EA /* Release */,
+				E7FA9C0A2C247D1E0096E1DD /* Debug */,
+				E7FA9C0B2C247D1E0096E1DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
