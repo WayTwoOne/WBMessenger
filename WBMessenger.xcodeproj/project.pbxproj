@@ -27,6 +27,10 @@
 		E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
 		E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
 		E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
+		E75E22A72C25C33700CAD8E8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E22A62C25C33700CAD8E8 /* Bank.swift */; };
+		E75E22A92C25C71500CAD8E8 /* CientA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E22A82C25C71500CAD8E8 /* CientA.swift */; };
+		E75E22AB2C25C71F00CAD8E8 /* ClientB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E22AA2C25C71F00CAD8E8 /* ClientB.swift */; };
+		E75E22AD2C25CD9400CAD8E8 /* BankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E22AC2C25CD9400CAD8E8 /* BankView.swift */; };
 		E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */; };
 		E78557682C245D7300AF6FD9 /* WBMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */; };
 		E7FA9BFB2C247D1D0096E1DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FA9BFA2C247D1D0096E1DD /* WidgetKit.framework */; };
@@ -93,6 +97,10 @@
 		E75293D52C21C6B1008A95EA /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
+		E75E22A62C25C33700CAD8E8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		E75E22A82C25C71500CAD8E8 /* CientA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CientA.swift; sourceTree = "<group>"; };
+		E75E22AA2C25C71F00CAD8E8 /* ClientB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientB.swift; sourceTree = "<group>"; };
+		E75E22AC2C25CD9400CAD8E8 /* BankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankView.swift; sourceTree = "<group>"; };
 		E768E70F2C18883E002177E2 /* WithoutAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAvatarView.swift; sourceTree = "<group>"; };
 		E7FA9BF82C247D1D0096E1DD /* ContactsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FA9BFA2C247D1D0096E1DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -162,6 +170,7 @@
 				E71BBCEE2C1766D200CA73EB /* HW1 */,
 				E71BBCEF2C1766FF00CA73EB /* HW2 */,
 				E70E028E2C1C7AF900A1D238 /* HW3 */,
+				E75E22A52C25C31D00CAD8E8 /* HW4 */,
 				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
 			);
@@ -279,6 +288,33 @@
 				E75293D52C21C6B1008A95EA /* NewContactView.swift */,
 			);
 			path = AddANewContact;
+			sourceTree = "<group>";
+		};
+		E75E22A52C25C31D00CAD8E8 /* HW4 */ = {
+			isa = PBXGroup;
+			children = (
+				E75E22AF2C25E14A00CAD8E8 /* Views */,
+				E75E22AE2C25E12D00CAD8E8 /* Classes */,
+			);
+			path = HW4;
+			sourceTree = "<group>";
+		};
+		E75E22AE2C25E12D00CAD8E8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E75E22A62C25C33700CAD8E8 /* Bank.swift */,
+				E75E22A82C25C71500CAD8E8 /* CientA.swift */,
+				E75E22AA2C25C71F00CAD8E8 /* ClientB.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E75E22AF2C25E14A00CAD8E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E75E22AC2C25CD9400CAD8E8 /* BankView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E7FA9BF92C247D1D0096E1DD /* Frameworks */ = {
@@ -420,17 +456,21 @@
 				E71840502C19E90F005246C8 /* DetailsAvatarView.swift in Sources */,
 				E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */,
 				E71840522C19EA80005246C8 /* SocialNetworkView.swift in Sources */,
+				E75E22AB2C25C71F00CAD8E8 /* ClientB.swift in Sources */,
 				E718404E2C19CB61005246C8 /* DetailsView.swift in Sources */,
 				E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */,
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
+				E75E22A72C25C33700CAD8E8 /* Bank.swift in Sources */,
 				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
 				E78557682C245D7300AF6FD9 /* WBMessengerApp.swift in Sources */,
 				E718404C2C19CB53005246C8 /* DetailsScreen.swift in Sources */,
+				E75E22A92C25C71500CAD8E8 /* CientA.swift in Sources */,
 				E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */,
 				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
 				E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */,
 				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
 				E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */,
+				E75E22AD2C25CD9400CAD8E8 /* BankView.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
 				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
