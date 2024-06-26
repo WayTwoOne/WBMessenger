@@ -7,13 +7,13 @@
 
 import Foundation
 
-//final class ClientB: Bank {
-//    var customersAccoutB: Double
-//    
-//    init(customersAccoutB: Double) {
-//        self.customersAccoutB = customersAccoutB
-//        
-//        super.init(acount: customersAccoutB)
-//    }
-//    
-//}
+final class ClientB: Bank {
+    var customersAccoutB: Double
+    
+    init(customersAccoutB: Double) {
+        self.customersAccoutB = customersAccoutB
+        
+        super.init(acount: customersAccoutB)
+    }
+    
+}

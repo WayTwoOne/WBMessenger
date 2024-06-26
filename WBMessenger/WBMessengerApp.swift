@@ -11,8 +11,7 @@ import SwiftUI
 struct WBMessengerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentViewHW2()
-                .preferredColorScheme(.light)
+            FactoryView()
         }
     }
 }
