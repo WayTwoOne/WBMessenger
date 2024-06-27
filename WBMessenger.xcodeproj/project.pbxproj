@@ -28,6 +28,9 @@
 		E72AF0382C2C7A4C00D8997F /* FactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AF0372C2C7A4C00D8997F /* FactoryView.swift */; };
 		E72AF03A2C2C7D9600D8997F /* StartedWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AF0392C2C7D9600D8997F /* StartedWorkView.swift */; };
 		E738BC502C21D7D300B6EC83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC4F2C21D7D300B6EC83 /* Router.swift */; };
+		E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74048282C2D598C00A8F45D /* CelendarView.swift */; };
+		E740482B2C2D657800A8F45D /* CelendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740482A2C2D657800A8F45D /* CelendarViewModel.swift */; };
+		E740482D2C2D814100A8F45D /* DatesInStringsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740482C2C2D814000A8F45D /* DatesInStringsView.swift */; };
 		E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
 		E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
 		E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
@@ -102,6 +105,9 @@
 		E72AF0372C2C7A4C00D8997F /* FactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryView.swift; sourceTree = "<group>"; };
 		E72AF0392C2C7D9600D8997F /* StartedWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedWorkView.swift; sourceTree = "<group>"; };
 		E738BC4F2C21D7D300B6EC83 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E74048282C2D598C00A8F45D /* CelendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarView.swift; sourceTree = "<group>"; };
+		E740482A2C2D657800A8F45D /* CelendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarViewModel.swift; sourceTree = "<group>"; };
+		E740482C2C2D814000A8F45D /* DatesInStringsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesInStringsView.swift; sourceTree = "<group>"; };
 		E75293D52C21C6B1008A95EA /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
 		E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 				E70E028E2C1C7AF900A1D238 /* HW3 */,
 				E75E22A52C25C31D00CAD8E8 /* HW4 */,
 				E72AF0322C2C788700D8997F /* HW5 */,
+				E74048252C2D56E000A8F45D /* HW6 */,
 				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
 			);
@@ -316,6 +323,32 @@
 				E738BC4F2C21D7D300B6EC83 /* Router.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		E74048252C2D56E000A8F45D /* HW6 */ = {
+			isa = PBXGroup;
+			children = (
+				E74048262C2D596700A8F45D /* Views */,
+				E74048272C2D597000A8F45D /* ViewModel */,
+			);
+			path = HW6;
+			sourceTree = "<group>";
+		};
+		E74048262C2D596700A8F45D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E74048282C2D598C00A8F45D /* CelendarView.swift */,
+				E740482C2C2D814000A8F45D /* DatesInStringsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E74048272C2D597000A8F45D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E740482A2C2D657800A8F45D /* CelendarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E75293D42C21C697008A95EA /* AddANewContact */ = {
@@ -512,9 +545,12 @@
 				E72AF03A2C2C7D9600D8997F /* StartedWorkView.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
 				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
+				E740482D2C2D814100A8F45D /* DatesInStringsView.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
+				E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */,
 				E7FA9C1D2C24880B0096E1DD /* Provider.swift in Sources */,
 				E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */,
+				E740482B2C2D657800A8F45D /* CelendarViewModel.swift in Sources */,
 				E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */,
 				E72AF0342C2C789F00D8997F /* Person.swift in Sources */,
 				E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */,

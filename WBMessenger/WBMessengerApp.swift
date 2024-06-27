@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WBMessengerApp: App {
+    @StateObject private var viewModel = CelendarViewModel()
     var body: some Scene {
         WindowGroup {
-            FactoryView()
+            CelendarView()
+                .environmentObject(viewModel)
         }
     }
 }
