@@ -12,23 +12,20 @@ struct StartedWorkView: View {
     @State var passport: Passport? = .init(series: 0, number: 0, date: Date.now, person: nil)
     @Environment(\.dismiss) var dismiss
     
+    init() {
+        person?.passport = passport
+        passport?.person = person
+    }
+    
     var body: some View {
         VStack {
-            Button {
-                person?.passport = passport
-                passport?.person = person
-            } label: {
-                Text("Add passport and person ")
-            }
-            .padding(.vertical, 50)
-            
             Button(action: {
-                deInit()
                 dismiss()
             }, label: {
                 Text("Button to dismiss")
             })
         }
+        .buttonStyle(.borderedProminent)
         .onDisappear {
             deInit()
         }
