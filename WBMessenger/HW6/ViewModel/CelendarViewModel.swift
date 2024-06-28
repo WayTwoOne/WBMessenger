@@ -9,26 +9,65 @@ import Foundation
 
 final class CelendarViewModel: ObservableObject {
     @Published var selectedCountry: Countries = .russia
+    @Published var selectedDateFormat: DateFormat = .spellOut
     @Published var days: [String] = []
     @Published var dateVM = Date()
+    
     let allCases = Countries.allCases
+    let allCasesDate = DateFormat.allCases
     let daysString = ["Day before yesturday", "Yesterday", "Today", "Tomorrow", "After tomorrow"]
     
     init() {
-        dateTransformation(dateVM, selectedCountry)
+        dateTransformation(dateVM, selectedCountry, selectedDateFormat)
     }
     
     
     enum Countries: String, CaseIterable, Identifiable {
-        case american = "🇺🇸"
-        case german = "🇩🇪"
-        case africa = "🇦🇫"
-        case england = "🇬🇧"
-        case russia = "🇷🇺"
+        case american
+        case german
+        case africa
+        case england
+        case russia
         var id: Countries { self }
+        
+        var flags: String {
+            switch self {
+            case .american:
+                return "🇺🇸"
+            case .german:
+                return "🇩🇪"
+            case .africa:
+                return "🇦🇫"
+            case .england:
+                return "🇬🇧"
+            case .russia:
+                return "🇷🇺"
+            }
+        }
+        
+        var localizations: String {
+            switch self {
+            case .american:
+                return "us_US"
+            case .german:
+                return "de_AT"
+            case .africa:
+                return "af_ZA"
+            case .england:
+                return "en_ER"
+            case .russia:
+                return "ru_RU"
+            }
+        }
     }
     
-    func dateTransformation(_ date: Date, _ region: Countries) {
+    enum DateFormat: String, CaseIterable, Identifiable {
+        case spellOut = "SpellOut date"
+        case full = "Full date"
+        var id: DateFormat { self }
+    }
+    
+    func dateTransformation(_ date: Date, _ region: Countries, _ format: DateFormat) {
         days = []
         var daysArray: [Date] = []
         let calendar = Calendar.current
@@ -38,47 +77,16 @@ final class CelendarViewModel: ObservableObject {
             daysArray.append(calendar.date(byAdding: .day, value: j, to: date) ?? date)
         }
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .full
-        
-        switch region {
-        case .american:
-            dateFormatter.locale = Locale(identifier: "us_US")
-        case .german:
-            dateFormatter.locale = Locale(identifier: "de_AT")
-        case .africa:
-            dateFormatter.locale = Locale(identifier: "af_ZA")
-        case .england:
-            dateFormatter.locale = Locale(identifier: "en_ER")
-        case .russia:
-            dateFormatter.locale = Locale(identifier: "ru_RU")
-        }
         
         daysArray.forEach { day in
-            let dateString = dateFormatter.string(from: day)
-            days.append(dateString)
-        }
-    }
-}
-
-
-extension String.StringInterpolation {
-    mutating func appendInterpolation(_ value: Date) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-
-        let dateString = dateFormatter.string(from: value)
-        appendLiteral(dateString)
-    }
-}
-
-extension String.StringInterpolation {
-    mutating func appendInterpolation(_ value: Int) {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .spellOut
-
-        if let result = formatter.string(from: value as NSNumber) {
-            appendLiteral(result)
+            switch format {
+            case .spellOut:
+                let day1 = "\(spellOut: day, local: selectedCountry.localizations)"
+                days.append(day1)
+            case .full:
+                let day1 = "\(full: day, local: selectedCountry.localizations)"
+                days.append(day1)
+            }
         }
     }
 }

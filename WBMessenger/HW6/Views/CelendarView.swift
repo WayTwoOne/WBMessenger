@@ -16,7 +16,7 @@ struct CelendarView: View {
                 .padding(.horizontal, 10)
             Picker("Country", selection: $viewModel.selectedCountry) {
                 ForEach(viewModel.allCases) { category in
-                    Text(category.rawValue).tag(category)
+                    Text(category.flags).tag(category)
                 }
             }
             
@@ -26,16 +26,24 @@ struct CelendarView: View {
                     .bold(viewModel.days[2] == day)
             }
             
+            Spacer()
+            Picker("Date format", selection: $viewModel.selectedDateFormat) {
+                ForEach(viewModel.allCasesDate) { category in
+                    Text(category.rawValue).tag(category)
+                }
+            }
             
+            .onChange(of: viewModel.selectedCountry) { newValue in
+                viewModel.dateTransformation(viewModel.dateVM, newValue, viewModel.selectedDateFormat)
+            }
+            .onChange(of: viewModel.dateVM) { newValue in
+                viewModel.dateTransformation(newValue, viewModel.selectedCountry, viewModel.selectedDateFormat)
+            }
+            .onChange(of: viewModel.selectedDateFormat) { newValue in
+                viewModel.dateTransformation(viewModel.dateVM, viewModel.selectedCountry, newValue)
+            }
         }
         .pickerStyle(.segmented)
-
-        .onChange(of: viewModel.selectedCountry) { newValue in
-            viewModel.dateTransformation(viewModel.dateVM, newValue)
-        }
-        .onChange(of: viewModel.dateVM) { newValue in
-            viewModel.dateTransformation(newValue, viewModel.selectedCountry)
-        }
     }
 }
 
