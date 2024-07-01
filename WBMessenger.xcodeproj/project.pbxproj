@@ -31,6 +31,8 @@
 		E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74048282C2D598C00A8F45D /* CelendarView.swift */; };
 		E740482B2C2D657800A8F45D /* CelendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740482A2C2D657800A8F45D /* CelendarViewModel.swift */; };
 		E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
+		E75630A42C33286F00FF421A /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75630A32C33286F00FF421A /* InfinityScrollView.swift */; };
+		E75630A82C333E1300FF421A /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75630A72C333E1300FF421A /* Collection+.swift */; };
 		E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */; };
 		E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */; };
 		E75E22A72C25C33700CAD8E8 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75E22A62C25C33700CAD8E8 /* Bank.swift */; };
@@ -108,6 +110,8 @@
 		E74048282C2D598C00A8F45D /* CelendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarView.swift; sourceTree = "<group>"; };
 		E740482A2C2D657800A8F45D /* CelendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarViewModel.swift; sourceTree = "<group>"; };
 		E75293D52C21C6B1008A95EA /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		E75630A32C33286F00FF421A /* InfinityScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityScrollView.swift; sourceTree = "<group>"; };
+		E75630A72C333E1300FF421A /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
 		E75A76232C1B8F66005C05AE /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		E75A76252C1B8FE2005C05AE /* TabBarIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcons.swift; sourceTree = "<group>"; };
 		E75E22A62C25C33700CAD8E8 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
@@ -187,7 +191,9 @@
 				E75E22A52C25C31D00CAD8E8 /* HW4 */,
 				E72AF0322C2C788700D8997F /* HW5 */,
 				E74048252C2D56E000A8F45D /* HW6 */,
+				E75630A02C33284600FF421A /* HW8 */,
 				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
+				E75630A62C333E0100FF421A /* Extentions */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
 			);
 			path = WBMessenger;
@@ -357,6 +363,30 @@
 				E75293D52C21C6B1008A95EA /* NewContactView.swift */,
 			);
 			path = AddANewContact;
+			sourceTree = "<group>";
+		};
+		E75630A02C33284600FF421A /* HW8 */ = {
+			isa = PBXGroup;
+			children = (
+				E75630A22C33285F00FF421A /* Views */,
+			);
+			path = HW8;
+			sourceTree = "<group>";
+		};
+		E75630A22C33285F00FF421A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E75630A32C33286F00FF421A /* InfinityScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E75630A62C333E0100FF421A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				E75630A72C333E1300FF421A /* Collection+.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		E75E22A52C25C31D00CAD8E8 /* HW4 */ = {
@@ -546,6 +576,8 @@
 				E72AF03A2C2C7D9600D8997F /* StartedWorkView.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
 				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
+				E75630A42C33286F00FF421A /* InfinityScrollView.swift in Sources */,
+				E75630A82C333E1300FF421A /* Collection+.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
 				E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */,
 				E7FA9C1D2C24880B0096E1DD /* Provider.swift in Sources */,

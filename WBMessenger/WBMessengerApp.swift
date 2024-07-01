@@ -12,8 +12,7 @@ struct WBMessengerApp: App {
     @StateObject private var viewModel = CelendarViewModel()
     var body: some Scene {
         WindowGroup {
-            CelendarView()
-                .environmentObject(viewModel)
+            InfinityScrollView()
         }
     }
 }
