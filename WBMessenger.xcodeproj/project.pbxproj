@@ -28,6 +28,9 @@
 		E72AF0382C2C7A4C00D8997F /* FactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AF0372C2C7A4C00D8997F /* FactoryView.swift */; };
 		E72AF03A2C2C7D9600D8997F /* StartedWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72AF0392C2C7D9600D8997F /* StartedWorkView.swift */; };
 		E738BC502C21D7D300B6EC83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E738BC4F2C21D7D300B6EC83 /* Router.swift */; };
+		E73A594F2C3533D600B66082 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A594E2C3533D600B66082 /* MainScreen.swift */; };
+		E73A59512C3533E900B66082 /* DetailsOfMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A59502C3533E900B66082 /* DetailsOfMainScreen.swift */; };
+		E73A59542C35359500B66082 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A59532C35359500B66082 /* Profile.swift */; };
 		E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74048282C2D598C00A8F45D /* CelendarView.swift */; };
 		E740482B2C2D657800A8F45D /* CelendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740482A2C2D657800A8F45D /* CelendarViewModel.swift */; };
 		E75293D62C21C6B1008A95EA /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75293D52C21C6B1008A95EA /* NewContactView.swift */; };
@@ -107,6 +110,9 @@
 		E72AF0372C2C7A4C00D8997F /* FactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryView.swift; sourceTree = "<group>"; };
 		E72AF0392C2C7D9600D8997F /* StartedWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedWorkView.swift; sourceTree = "<group>"; };
 		E738BC4F2C21D7D300B6EC83 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E73A594E2C3533D600B66082 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		E73A59502C3533E900B66082 /* DetailsOfMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsOfMainScreen.swift; sourceTree = "<group>"; };
+		E73A59532C35359500B66082 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		E74048282C2D598C00A8F45D /* CelendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarView.swift; sourceTree = "<group>"; };
 		E740482A2C2D657800A8F45D /* CelendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelendarViewModel.swift; sourceTree = "<group>"; };
 		E75293D52C21C6B1008A95EA /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
@@ -155,11 +161,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E70E028E2C1C7AF900A1D238 /* HW3 */ = {
+		E70E028E2C1C7AF900A1D238 /* HW4 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = HW3;
+			path = HW4;
 			sourceTree = "<group>";
 		};
 		E71583412C0FA25B00EADFF7 = {
@@ -185,13 +191,14 @@
 			isa = PBXGroup;
 			children = (
 				E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */,
-				E71BBCEE2C1766D200CA73EB /* HW1 */,
-				E71BBCEF2C1766FF00CA73EB /* HW2 */,
-				E70E028E2C1C7AF900A1D238 /* HW3 */,
-				E75E22A52C25C31D00CAD8E8 /* HW4 */,
-				E72AF0322C2C788700D8997F /* HW5 */,
-				E74048252C2D56E000A8F45D /* HW6 */,
-				E75630A02C33284600FF421A /* HW8 */,
+				E71BBCEE2C1766D200CA73EB /* HW2 */,
+				E71BBCEF2C1766FF00CA73EB /* HW3 */,
+				E70E028E2C1C7AF900A1D238 /* HW4 */,
+				E75E22A52C25C31D00CAD8E8 /* HW5 */,
+				E72AF0322C2C788700D8997F /* HW6 */,
+				E74048252C2D56E000A8F45D /* HW7 */,
+				E73A594C2C35339A00B66082 /* HW8 */,
+				E75630A02C33284600FF421A /* HW9 */,
 				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
 				E75630A62C333E0100FF421A /* Extentions */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
@@ -236,17 +243,17 @@
 			path = ContactDetails;
 			sourceTree = "<group>";
 		};
-		E71BBCEE2C1766D200CA73EB /* HW1 */ = {
+		E71BBCEE2C1766D200CA73EB /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
 				E715834F2C0FA25B00EADFF7 /* ContentView.swift */,
 				E71583622C0FA7DA00EADFF7 /* Verification */,
 				E715835F2C0FA4BB00EADFF7 /* Walkthrough */,
 			);
-			path = HW1;
+			path = HW2;
 			sourceTree = "<group>";
 		};
-		E71BBCEF2C1766FF00CA73EB /* HW2 */ = {
+		E71BBCEF2C1766FF00CA73EB /* HW3 */ = {
 			isa = PBXGroup;
 			children = (
 				E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */,
@@ -257,7 +264,7 @@
 				E71BBCFC2C1796E400CA73EB /* Model */,
 				E71BBCF02C17676B00CA73EB /* CustomTabBar */,
 			);
-			path = HW2;
+			path = HW3;
 			sourceTree = "<group>";
 		};
 		E71BBCF02C17676B00CA73EB /* CustomTabBar */ = {
@@ -296,13 +303,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E72AF0322C2C788700D8997F /* HW5 */ = {
+		E72AF0322C2C788700D8997F /* HW6 */ = {
 			isa = PBXGroup;
 			children = (
 				E72AF03E2C2C9F2600D8997F /* Views */,
 				E72AF03D2C2C9F0F00D8997F /* Classes */,
 			);
-			path = HW5;
+			path = HW6;
 			sourceTree = "<group>";
 		};
 		E72AF03D2C2C9F0F00D8997F /* Classes */ = {
@@ -331,13 +338,39 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		E74048252C2D56E000A8F45D /* HW6 */ = {
+		E73A594C2C35339A00B66082 /* HW8 */ = {
+			isa = PBXGroup;
+			children = (
+				E73A59522C35358600B66082 /* Model */,
+				E73A594D2C3533C200B66082 /* Views */,
+			);
+			path = HW8;
+			sourceTree = "<group>";
+		};
+		E73A594D2C3533C200B66082 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E73A594E2C3533D600B66082 /* MainScreen.swift */,
+				E73A59502C3533E900B66082 /* DetailsOfMainScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E73A59522C35358600B66082 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E73A59532C35359500B66082 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E74048252C2D56E000A8F45D /* HW7 */ = {
 			isa = PBXGroup;
 			children = (
 				E74048262C2D596700A8F45D /* Views */,
 				E74048272C2D597000A8F45D /* ViewModel */,
 			);
-			path = HW6;
+			path = HW7;
 			sourceTree = "<group>";
 		};
 		E74048262C2D596700A8F45D /* Views */ = {
@@ -365,12 +398,12 @@
 			path = AddANewContact;
 			sourceTree = "<group>";
 		};
-		E75630A02C33284600FF421A /* HW8 */ = {
+		E75630A02C33284600FF421A /* HW9 */ = {
 			isa = PBXGroup;
 			children = (
 				E75630A22C33285F00FF421A /* Views */,
 			);
-			path = HW8;
+			path = HW9;
 			sourceTree = "<group>";
 		};
 		E75630A22C33285F00FF421A /* Views */ = {
@@ -389,13 +422,13 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
-		E75E22A52C25C31D00CAD8E8 /* HW4 */ = {
+		E75E22A52C25C31D00CAD8E8 /* HW5 */ = {
 			isa = PBXGroup;
 			children = (
 				E75E22AF2C25E14A00CAD8E8 /* Views */,
 				E75E22AE2C25E12D00CAD8E8 /* Classes */,
 			);
-			path = HW4;
+			path = HW5;
 			sourceTree = "<group>";
 		};
 		E75E22AE2C25E12D00CAD8E8 /* Classes */ = {
@@ -568,6 +601,8 @@
 				E799C0782C2EE55500D0C82A /* Extentions.swift in Sources */,
 				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
 				E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */,
+				E73A59512C3533E900B66082 /* DetailsOfMainScreen.swift in Sources */,
+				E73A59542C35359500B66082 /* Profile.swift in Sources */,
 				E715835C2C0FA47700EADFF7 /* WalkthroughView.swift in Sources */,
 				E72AF0362C2C7A2600D8997F /* Passport.swift in Sources */,
 				E72AF0382C2C7A4C00D8997F /* FactoryView.swift in Sources */,
@@ -575,6 +610,7 @@
 				E75E22AD2C25CD9400CAD8E8 /* BankView.swift in Sources */,
 				E72AF03A2C2C7D9600D8997F /* StartedWorkView.swift in Sources */,
 				E71BBCF52C17902300CA73EB /* ContactsScreen.swift in Sources */,
+				E73A594F2C3533D600B66082 /* MainScreen.swift in Sources */,
 				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
 				E75630A42C33286F00FF421A /* InfinityScrollView.swift in Sources */,
 				E75630A82C333E1300FF421A /* Collection+.swift in Sources */,
