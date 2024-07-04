@@ -18,7 +18,7 @@ struct AvatarView: View {
                 .overlay(alignment: .center, content: {
                     RoundedRectangle(cornerRadius: 17)
                         .stroke(lineWidth: 2.5)
-                        .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                        .foregroundColor(Color(red: RGBColor(154), green: RGBColor(65), blue: RGBColor(254)))
                         
                         .opacity(contact.didStory ? 1 : 0)
                 })
@@ -35,6 +35,12 @@ struct AvatarView: View {
             .offset(x: 25, y: -25)
                 
         }
+    }
+}
+
+extension AvatarView {
+    private func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 

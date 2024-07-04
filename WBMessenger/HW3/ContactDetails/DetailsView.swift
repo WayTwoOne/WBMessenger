@@ -16,10 +16,16 @@ struct DetailsView: View {
                 .foregroundColor(.black)
                 Text(contact.phoneNumber)
                 .font(.system(size: 16))
-                .foregroundColor(Color(red: 173, green: 181, blue: 189))
+                .foregroundColor(Color(red: RGBColor(173), green: RGBColor(181), blue: RGBColor(189)))
                 
             
         }
+    }
+}
+
+extension DetailsView {
+    private func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 

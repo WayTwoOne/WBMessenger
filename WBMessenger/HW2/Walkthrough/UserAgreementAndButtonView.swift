@@ -27,7 +27,7 @@ struct UserAgreementAndButtonView: View {
                 Text("Начать общаться")
                     .frame(width: width * 0.85, height: height * 0.07)
                     .cornerRadius(30)
-                    .background(Color(red: 154, green: 65, blue: 254))
+                    .background(Color(red: RGBColor(154), green: RGBColor(65), blue: RGBColor(254)))
                     .foregroundColor(.white)
                     .cornerRadius(30)
                     .font(.system(size: 16))
@@ -40,6 +40,12 @@ struct UserAgreementAndButtonView: View {
             
 
         }
+    }
+}
+
+extension UserAgreementAndButtonView {
+    func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 

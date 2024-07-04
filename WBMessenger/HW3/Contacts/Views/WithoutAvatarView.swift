@@ -15,7 +15,7 @@ struct WithoutAvatarView: View {
             ZStack {
                 Rectangle()
                     .frame(width: 56, height: 56)
-                                .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                                .foregroundColor(Color(red: RGBColor(154), green: RGBColor(65), blue: RGBColor(254)))
                    
                 Text(getInitials(from:contact.name))
                     .foregroundColor(.white)
@@ -25,7 +25,7 @@ struct WithoutAvatarView: View {
             .overlay(alignment: .center, content: {
                 RoundedRectangle(cornerRadius: 17)
                     .stroke(lineWidth: 2.5)
-                    .foregroundColor(Color(red: 154, green: 65, blue: 254))
+                    .foregroundColor(Color(red: RGBColor(154), green: RGBColor(65), blue: RGBColor(254)))
                     
                     .opacity(contact.didStory ? 1 : 0)
             })
@@ -48,6 +48,12 @@ struct WithoutAvatarView: View {
     
     private func getInitials(from name: String) -> String {
         return name.components(separatedBy: " ").reduce("") { ($0 == "" ? "" : "\($0.first!)") + "\($1.first!)" }
+    }
+}
+
+extension WithoutAvatarView {
+    private func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 

@@ -21,7 +21,7 @@ struct DetailsAvatarView: View {
                     .background {
                         Circle()
                             .frame(width: 200, height: 200)
-                                        .foregroundColor(Color(red: 247, green: 247, blue: 252))
+                                        .foregroundColor(Color(red: RGBColor(247), green: RGBColor(247), blue: RGBColor(252)))
                             
                     }
             }
@@ -33,11 +33,17 @@ struct DetailsAvatarView: View {
                     .background {
                         Circle()
                             .frame(width: 200, height: 200)
-                                        .foregroundColor(Color(red: 247, green: 247, blue: 252))
+                                        .foregroundColor(Color(red: RGBColor(247), green: RGBColor(247), blue: RGBColor(252)))
                            
                     }
             }
         }
+    }
+}
+
+extension DetailsAvatarView {
+    func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 

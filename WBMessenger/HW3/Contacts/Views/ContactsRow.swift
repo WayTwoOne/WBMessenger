@@ -23,7 +23,7 @@ struct ContactsRow: View {
                     .padding(.vertical, 1)
                 Text(getDate(with: contact.lastSeenOnline))
                     .font(.system(size: 12))
-                    .foregroundColor(Color(red: 173, green: 181, blue: 189))
+                    .foregroundColor(Color(red: RGBColor(173), green: RGBColor(181), blue: RGBColor(189)))
                    
                     
             }
@@ -52,6 +52,12 @@ struct ContactsRow: View {
         }
 
         return string
+    }
+}
+
+extension ContactsRow {
+    private func RGBColor(_ color: Double) -> Double {
+        color / 255
     }
 }
 
