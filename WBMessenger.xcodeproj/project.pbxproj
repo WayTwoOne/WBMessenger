@@ -14,6 +14,13 @@
 		E715835E2C0FA4AF00EADFF7 /* LightOrDarkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715835D2C0FA4AF00EADFF7 /* LightOrDarkImage.swift */; };
 		E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71583602C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift */; };
 		E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71583632C0FA81E00EADFF7 /* VerificationView.swift */; };
+		E715E4722C37FC3F00422ADD /* EnteringTheReceivedCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E46C2C37FC3E00422ADD /* EnteringTheReceivedCodeViewModel.swift */; };
+		E715E4732C37FC3F00422ADD /* Sync+Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E46D2C37FC3E00422ADD /* Sync+Focus.swift */; };
+		E715E4752C37FC3F00422ADD /* PinCodeTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E4702C37FC3E00422ADD /* PinCodeTextFieldView.swift */; };
+		E715E4762C37FC3F00422ADD /* EnteringCodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E4712C37FC3E00422ADD /* EnteringCodeTextView.swift */; };
+		E715E4792C38015400422ADD /* ContentViewHW11.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E4782C38015400422ADD /* ContentViewHW11.swift */; };
+		E715E47C2C38017200422ADD /* RouterHW11.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E47B2C38017200422ADD /* RouterHW11.swift */; };
+		E715E47E2C3809F900422ADD /* VerificationScreenWitoutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E715E47D2C3809F900422ADD /* VerificationScreenWitoutAnimation.swift */; };
 		E718404C2C19CB53005246C8 /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404B2C19CB53005246C8 /* DetailsScreen.swift */; };
 		E718404E2C19CB61005246C8 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404D2C19CB61005246C8 /* DetailsView.swift */; };
 		E71840502C19E90F005246C8 /* DetailsAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E718404F2C19E90F005246C8 /* DetailsAvatarView.swift */; };
@@ -24,8 +31,6 @@
 		E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */; };
 		E71D23A72C36EC41003505B6 /* VerificationScreenWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D239E2C36EC41003505B6 /* VerificationScreenWithAnimation.swift */; };
 		E71D23A82C36EC41003505B6 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A02C36EC41003505B6 /* ContinueButton.swift */; };
-		E71D23A92C36EC41003505B6 /* CountryCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A22C36EC41003505B6 /* CountryCodeView.swift */; };
-		E71D23AA2C36EC41003505B6 /* VerificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A32C36EC41003505B6 /* VerificationScreen.swift */; };
 		E71D23AB2C36EC41003505B6 /* PhoneNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A42C36EC41003505B6 /* PhoneNumberLabel.swift */; };
 		E71D23AC2C36EC41003505B6 /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A52C36EC41003505B6 /* PhoneNumberTextField.swift */; };
 		E71D23AD2C36EC41003505B6 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D23A62C36EC41003505B6 /* Extention.swift */; };
@@ -107,6 +112,13 @@
 		E715835D2C0FA4AF00EADFF7 /* LightOrDarkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightOrDarkImage.swift; sourceTree = "<group>"; };
 		E71583602C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementAndButtonView.swift; sourceTree = "<group>"; };
 		E71583632C0FA81E00EADFF7 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		E715E46C2C37FC3E00422ADD /* EnteringTheReceivedCodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteringTheReceivedCodeViewModel.swift; sourceTree = "<group>"; };
+		E715E46D2C37FC3E00422ADD /* Sync+Focus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sync+Focus.swift"; sourceTree = "<group>"; };
+		E715E4702C37FC3E00422ADD /* PinCodeTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeTextFieldView.swift; sourceTree = "<group>"; };
+		E715E4712C37FC3E00422ADD /* EnteringCodeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteringCodeTextView.swift; sourceTree = "<group>"; };
+		E715E4782C38015400422ADD /* ContentViewHW11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHW11.swift; sourceTree = "<group>"; };
+		E715E47B2C38017200422ADD /* RouterHW11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHW11.swift; sourceTree = "<group>"; };
+		E715E47D2C3809F900422ADD /* VerificationScreenWitoutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationScreenWitoutAnimation.swift; sourceTree = "<group>"; };
 		E718404B2C19CB53005246C8 /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
 		E718404D2C19CB61005246C8 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		E718404F2C19E90F005246C8 /* DetailsAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAvatarView.swift; sourceTree = "<group>"; };
@@ -117,8 +129,6 @@
 		E71BBCFA2C1796D100CA73EB /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		E71D239E2C36EC41003505B6 /* VerificationScreenWithAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationScreenWithAnimation.swift; sourceTree = "<group>"; };
 		E71D23A02C36EC41003505B6 /* ContinueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
-		E71D23A22C36EC41003505B6 /* CountryCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCodeView.swift; sourceTree = "<group>"; };
-		E71D23A32C36EC41003505B6 /* VerificationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationScreen.swift; sourceTree = "<group>"; };
 		E71D23A42C36EC41003505B6 /* PhoneNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberLabel.swift; sourceTree = "<group>"; };
 		E71D23A52C36EC41003505B6 /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
 		E71D23A62C36EC41003505B6 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
@@ -213,17 +223,10 @@
 			isa = PBXGroup;
 			children = (
 				E715834D2C0FA25B00EADFF7 /* WBMessengerApp.swift */,
-				E71BBCEE2C1766D200CA73EB /* HW2 */,
-				E71BBCEF2C1766FF00CA73EB /* HW3 */,
-				E70E028E2C1C7AF900A1D238 /* HW4 */,
-				E75E22A52C25C31D00CAD8E8 /* HW5 */,
-				E72AF0322C2C788700D8997F /* HW6 */,
-				E74048252C2D56E000A8F45D /* HW7 */,
-				E73A594C2C35339A00B66082 /* HW8 */,
-				E75630A02C33284600FF421A /* HW9 */,
-				E71D232D2C36EBC4003505B6 /* HW10 */,
-				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
+				E738BC4E2C21D7C300B6EC83 /* Router */,
 				E75630A62C333E0100FF421A /* Extentions */,
+				E715E4772C37FC7900422ADD /* HomeWorks */,
+				E71583512C0FA25C00EADFF7 /* Assets.xcassets */,
 				E71583532C0FA25C00EADFF7 /* Preview Content */,
 			);
 			path = WBMessenger;
@@ -255,6 +258,59 @@
 			path = Verification;
 			sourceTree = "<group>";
 		};
+		E715E46A2C37FC3E00422ADD /* HW11 */ = {
+			isa = PBXGroup;
+			children = (
+				E715E4782C38015400422ADD /* ContentViewHW11.swift */,
+				E715E47A2C38016000422ADD /* RouterHW11 */,
+				E715E46B2C37FC3E00422ADD /* ViewModel */,
+				E715E46F2C37FC3E00422ADD /* Views */,
+			);
+			path = HW11;
+			sourceTree = "<group>";
+		};
+		E715E46B2C37FC3E00422ADD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E715E46C2C37FC3E00422ADD /* EnteringTheReceivedCodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E715E46F2C37FC3E00422ADD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E715E4702C37FC3E00422ADD /* PinCodeTextFieldView.swift */,
+				E715E4712C37FC3E00422ADD /* EnteringCodeTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E715E4772C37FC7900422ADD /* HomeWorks */ = {
+			isa = PBXGroup;
+			children = (
+				E71BBCEE2C1766D200CA73EB /* HW2 */,
+				E71BBCEF2C1766FF00CA73EB /* HW3 */,
+				E70E028E2C1C7AF900A1D238 /* HW4 */,
+				E75E22A52C25C31D00CAD8E8 /* HW5 */,
+				E72AF0322C2C788700D8997F /* HW6 */,
+				E74048252C2D56E000A8F45D /* HW7 */,
+				E73A594C2C35339A00B66082 /* HW8 */,
+				E75630A02C33284600FF421A /* HW9 */,
+				E71D232D2C36EBC4003505B6 /* HW10 */,
+				E715E46A2C37FC3E00422ADD /* HW11 */,
+			);
+			path = HomeWorks;
+			sourceTree = "<group>";
+		};
+		E715E47A2C38016000422ADD /* RouterHW11 */ = {
+			isa = PBXGroup;
+			children = (
+				E715E47B2C38017200422ADD /* RouterHW11.swift */,
+			);
+			path = RouterHW11;
+			sourceTree = "<group>";
+		};
 		E718404A2C19CB31005246C8 /* ContactDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				E71F0C852C1B38AF00FAFD32 /* ContentViewHW2.swift */,
-				E738BC4E2C21D7C300B6EC83 /* Router */,
 				E75293D42C21C697008A95EA /* AddANewContact */,
 				E718404A2C19CB31005246C8 /* ContactDetails */,
 				E71BBCF32C17900500CA73EB /* Contacts */,
@@ -332,6 +387,7 @@
 				E71D239E2C36EC41003505B6 /* VerificationScreenWithAnimation.swift */,
 				E71D239F2C36EC41003505B6 /* Views */,
 				E71D23A62C36EC41003505B6 /* Extention.swift */,
+				E715E47D2C3809F900422ADD /* VerificationScreenWitoutAnimation.swift */,
 			);
 			path = HW10;
 			sourceTree = "<group>";
@@ -339,21 +395,11 @@
 		E71D239F2C36EC41003505B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E71D23A02C36EC41003505B6 /* ContinueButton.swift */,
-				E71D23A12C36EC41003505B6 /* FlagsAndCountry */,
 				E71D23A42C36EC41003505B6 /* PhoneNumberLabel.swift */,
 				E71D23A52C36EC41003505B6 /* PhoneNumberTextField.swift */,
+				E71D23A02C36EC41003505B6 /* ContinueButton.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E71D23A12C36EC41003505B6 /* FlagsAndCountry */ = {
-			isa = PBXGroup;
-			children = (
-				E71D23A22C36EC41003505B6 /* CountryCodeView.swift */,
-				E71D23A32C36EC41003505B6 /* VerificationScreen.swift */,
-			);
-			path = FlagsAndCountry;
 			sourceTree = "<group>";
 		};
 		E72AF0322C2C788700D8997F /* HW6 */ = {
@@ -483,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				E75630A72C333E1300FF421A /* Collection+.swift */,
+				E715E46D2C37FC3E00422ADD /* Sync+Focus.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -653,24 +700,29 @@
 				E738BC502C21D7D300B6EC83 /* Router.swift in Sources */,
 				E71840502C19E90F005246C8 /* DetailsAvatarView.swift in Sources */,
 				E75365362C35C604008F4B17 /* OneOnTopTwoOnBottom.swift in Sources */,
+				E715E4762C37FC3F00422ADD /* EnteringCodeTextView.swift in Sources */,
 				E71BBCF72C1790B100CA73EB /* ContactsRow.swift in Sources */,
 				E71840522C19EA80005246C8 /* SocialNetworkView.swift in Sources */,
 				E75E22AB2C25C71F00CAD8E8 /* ClientB.swift in Sources */,
 				E718404E2C19CB61005246C8 /* DetailsView.swift in Sources */,
-				E71D23AA2C36EC41003505B6 /* VerificationScreen.swift in Sources */,
+				E715E4732C37FC3F00422ADD /* Sync+Focus.swift in Sources */,
 				E768E7102C18883E002177E2 /* WithoutAvatarView.swift in Sources */,
 				E75365372C35C604008F4B17 /* TwoOnTopOneOnBottom.swift in Sources */,
 				E71583502C0FA25B00EADFF7 /* ContentView.swift in Sources */,
 				E75E22A72C25C33700CAD8E8 /* Bank.swift in Sources */,
+				E715E4752C37FC3F00422ADD /* PinCodeTextFieldView.swift in Sources */,
 				E71D23AB2C36EC41003505B6 /* PhoneNumberLabel.swift in Sources */,
 				E71583612C0FA75E00EADFF7 /* UserAgreementAndButtonView.swift in Sources */,
 				E78557682C245D7300AF6FD9 /* WBMessengerApp.swift in Sources */,
 				E718404C2C19CB53005246C8 /* DetailsScreen.swift in Sources */,
 				E75E22A92C25C71500CAD8E8 /* CientA.swift in Sources */,
+				E715E4722C37FC3F00422ADD /* EnteringTheReceivedCodeViewModel.swift in Sources */,
 				E75A76242C1B8F66005C05AE /* CustomTabBarView.swift in Sources */,
 				E799C0782C2EE55500D0C82A /* Extentions.swift in Sources */,
 				E71583642C0FA81E00EADFF7 /* VerificationView.swift in Sources */,
+				E715E47E2C3809F900422ADD /* VerificationScreenWitoutAnimation.swift in Sources */,
 				E71D23AC2C36EC41003505B6 /* PhoneNumberTextField.swift in Sources */,
+				E715E47C2C38017200422ADD /* RouterHW11.swift in Sources */,
 				E75A76262C1B8FE2005C05AE /* TabBarIcons.swift in Sources */,
 				E73A59512C3533E900B66082 /* DetailsOfMainScreen.swift in Sources */,
 				E73A59542C35359500B66082 /* Profile.swift in Sources */,
@@ -686,6 +738,7 @@
 				E73A594F2C3533D600B66082 /* MainScreen.swift in Sources */,
 				E7FA9C1A2C24842B0096E1DD /* SimpleEntry.swift in Sources */,
 				E75630A42C33286F00FF421A /* InfinityScrollView.swift in Sources */,
+				E715E4792C38015400422ADD /* ContentViewHW11.swift in Sources */,
 				E75630A82C333E1300FF421A /* Collection+.swift in Sources */,
 				E71BBCF92C17954400CA73EB /* AvatarView.swift in Sources */,
 				E74048292C2D598C00A8F45D /* CelendarView.swift in Sources */,
@@ -695,7 +748,6 @@
 				E740482B2C2D657800A8F45D /* CelendarViewModel.swift in Sources */,
 				E71BBCFB2C1796D100CA73EB /* ContactsModel.swift in Sources */,
 				E72AF0342C2C789F00D8997F /* Person.swift in Sources */,
-				E71D23A92C36EC41003505B6 /* CountryCodeView.swift in Sources */,
 				E71D23A72C36EC41003505B6 /* VerificationScreenWithAnimation.swift in Sources */,
 				E71F0C862C1B38AF00FAFD32 /* ContentViewHW2.swift in Sources */,
 			);

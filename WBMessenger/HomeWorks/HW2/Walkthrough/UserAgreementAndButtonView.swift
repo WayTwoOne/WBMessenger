@@ -10,6 +10,7 @@ import SwiftUI
 struct UserAgreementAndButtonView: View {
     @State var isPresented = false
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var router: RouterHW11
     
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
@@ -22,7 +23,7 @@ struct UserAgreementAndButtonView: View {
                 .bold()
                 .padding()
             Button {
-                isPresented.toggle()
+                router.push(.verificationWithPhone)
             } label: {
                 Text("Начать общаться")
                     .frame(width: width * 0.85, height: height * 0.07)
@@ -33,12 +34,6 @@ struct UserAgreementAndButtonView: View {
                     .font(.system(size: 16))
                     .bold()
             }
-            
-            .sheet(isPresented: $isPresented) {
-                VerificationView()
-            }
-            
-
         }
     }
 }

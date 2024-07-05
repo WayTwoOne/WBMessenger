@@ -12,6 +12,8 @@ struct VerificationScreenWithAnimation: View {
     @State private var phoneNumber = ""
     @State private var countryCode = ""
     
+    @EnvironmentObject var router: RouterHW11
+    
     var body: some View {
         VStack {
             PhoneNumberLabel()
@@ -20,8 +22,20 @@ struct VerificationScreenWithAnimation: View {
             PhoneNumberTextField(value: $countryCode, phoneNumber: $phoneNumber, letsGo: $letsGo)
                 .offset(x: 0, y: letsGo ? 520 : 0)
                 .animation(.easeOut(duration: 3), value: letsGo)
-            ContinueButton(letsGo: $letsGo, phoneNumber: $phoneNumber)
+            ContinueButton(letsGo: $letsGo, phoneNumber: $phoneNumber, countryCode: $countryCode)
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    router.goBack()
+                } label: {
+                    Image("vector")
+                        .bold()
+                }
+                
+            }
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 

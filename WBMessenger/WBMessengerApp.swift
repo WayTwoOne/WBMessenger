@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WBMessengerApp: App {
+    @StateObject var viewModel = EnteringTheReceivedCodeViewModel(numberOfFields: 4)
     var body: some Scene {
         WindowGroup {
-            VerificationScreenWithAnimation()
+            ContentViewHW11()
+                .environmentObject(viewModel)
         }
     }
 }
