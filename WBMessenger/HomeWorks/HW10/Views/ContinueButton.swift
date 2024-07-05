@@ -18,7 +18,7 @@ struct ContinueButton: View {
     var body: some View {
         Button {
             letsGo.toggle()
-            viewModel.correctPhoneNumber(countryCode, phoneNumber)
+            viewModel.correctPhoneNumber2()
             router.push(.verificationWithCode)
         } label: {
             ZStack {
@@ -28,10 +28,10 @@ struct ContinueButton: View {
             }
             .frame(width: 350, height: 60, alignment: .center)
             .foregroundColor(Color(red: RGBColor(154), green: RGBColor(65), blue: RGBColor(254)))
-            .opacity(continueAction(phoneNumber, countryCode) ? 0.5 : 1)
+            .opacity(continueAction(viewModel.phoneNumber, viewModel.countryCode) ? 0.5 : 1)
 
         }
-        .disabled(continueAction(phoneNumber, countryCode))
+        .disabled(continueAction(viewModel.phoneNumber, viewModel.countryCode))
         
     }
     

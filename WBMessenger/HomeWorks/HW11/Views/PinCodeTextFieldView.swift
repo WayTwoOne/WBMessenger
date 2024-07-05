@@ -19,7 +19,7 @@ struct PinCodeTextFieldView: View {
                     Circle()
                         .frame(width: 32, height: 40, alignment: .center)
                         .foregroundColor(Color(red: RGBColor(237), green: RGBColor(237), blue: RGBColor(237)))
-                        .opacity(!viewModel.pinCode[index].isEmpty ? 0 : 1)
+                        .opacity(viewModel.pinCode[index].isEmpty ? 1 : 0)
                         .padding(.horizontal, 5)
                     TextField("", text: $viewModel.pinCode[index])
                         .keyboardType(.numberPad)

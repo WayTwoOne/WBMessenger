@@ -13,7 +13,7 @@ final class EnteringTheReceivedCodeViewModel: ObservableObject {
     @Published var hasFocus: Int?
     @Published var isButtonDisable = true
     @Published var phoneNumber = ""
-    @Published var hasTimeElapsed = false
+    @Published var countryCode = ""
     
     let numberOfFields: Int
     
@@ -34,20 +34,37 @@ final class EnteringTheReceivedCodeViewModel: ObservableObject {
         }
     }
     
-    func correctPhoneNumber(_ countryCode: String,_ phoneNumber: String) {
+    
+    func correctPhoneNumber2() {
         var phone = "+\(countryCode) "
         for i in 0...phoneNumber.count - 1 {
-            phone.append(String(Array(phoneNumber)[i]))
-            if i == 3 {
-                phone.append(" ")
-            } else {
-                if i == 6 || i == 8 {
-                    phone.append("-")
-                }
+            switch i {
+            case 0..<3 :
+                phone.append(String(Array(phoneNumber)[i]))
+            case 3:
+                phone.append(" \(String(Array(phoneNumber)[i]))")
+            case 4..<6:
+                phone.append(String(Array(phoneNumber)[i]))
+            case 6, 8:
+                phone.append("-\(String(Array(phoneNumber)[i]))")
+            case 7:
+                phone.append(String(Array(phoneNumber)[i]))
+            case 9...10:
+                phone.append(String(Array(phoneNumber)[i]))
+            default:
+                print("Такого числа нет((((((")
             }
         }
-        
-        self.phoneNumber = phone
+        phoneNumber = phone
+    }
+    
+    func clearPhoneNumberAndCountryCode() {
+        phoneNumber = ""
+        countryCode = ""
+    }
+    
+    func clearPinCodeTextField() {
+        pinCode = Array(repeating: "", count: numberOfFields)
     }
     
     

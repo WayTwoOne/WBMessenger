@@ -19,7 +19,7 @@ struct VerificationScreenWithAnimation: View {
             PhoneNumberLabel()
                 .offset(x: 0, y: letsGo ? -520 : 0)
                 .animation(.easeIn(duration: 3), value: letsGo)
-            PhoneNumberTextField(value: $countryCode, phoneNumber: $phoneNumber, letsGo: $letsGo)
+            PhoneNumberTextField(phoneNumber: $phoneNumber, countryCode: $countryCode, letsGo: $letsGo)
                 .offset(x: 0, y: letsGo ? 520 : 0)
                 .animation(.easeOut(duration: 3), value: letsGo)
             ContinueButton(letsGo: $letsGo, phoneNumber: $phoneNumber, countryCode: $countryCode)

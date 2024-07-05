@@ -9,12 +9,10 @@ import SwiftUI
 
 struct PhoneNumberTextField: View {
     @State var y : CGFloat = 150
-    @State var countryCode = ""
     @State var countryFlag = ""
-    @State var search = ""
-    
-    @Binding var value: String
+
     @Binding var phoneNumber: String
+    @Binding var countryCode: String
     @Binding var letsGo: Bool
     
     func flag(country:String) -> String {
@@ -31,7 +29,7 @@ struct PhoneNumberTextField: View {
         return current.localizedString(forRegionCode: countryCode)
     }
     
-    func getCountryCode (_ country : String) -> String {
+    func getCountryCode (_ country: String) -> String {
         
         if let key = countryDictionary.first(where: { $0.value == country })?.key {
             return key
@@ -40,38 +38,41 @@ struct PhoneNumberTextField: View {
     }
     
     func maxNumbersInCountryCode(in value: String) {
-        if value.count > 3 {
-            self.value = String(value.prefix(3))
+        if countryCode.count > 3 {
+            self.countryCode = String(value.prefix(3))
         }
         
     }
     
     var body: some View {
-        HStack (spacing: 0) {
-            HStack (spacing: 0) {
-                Text("\(flag(country: getCountryCode(value)))")
+        HStack {
+            HStack  {
+                Text("\(flag(country: getCountryCode(countryCode)))")
                     .frame(width: 30, height: 50)
                 
-                TextField("+7", text: $value)
-                    .onChange(of: value) { newValue in
-                        maxNumbersInCountryCode(in: newValue)
-                    }
-               
+                TextField("+7", text: $countryCode)
                     .keyboardType(.phonePad)
                     .frame(width: 40, height: 50)
             }
+            
+            .onChange(of: countryCode) { newValue in
+                maxNumbersInCountryCode(in: newValue)
+            }
+            
             .frame(width: 80, height: 44)
             .background(Color.secondary.opacity(0.2))
             .cornerRadius(10)
             .foregroundColor(self.countryCode.isEmpty ? .secondary : .black)
             .padding(.horizontal, 10)
+            
             TextField("000 000-00-00", text: $phoneNumber)
                 .frame(height: 10)
                 .padding()
                 .background(Color.secondary.opacity(0.2))
                 .cornerRadius(5)
                 .keyboardType(.phonePad)
-        }.padding()
+        }
+        .padding()
     }
     let countryDictionary  = ["AF":"93","AL":"355","DZ":"213","US":"1",
                                 "AD":"376","AO":"244","AI":"1","AG":"1","AR":"54",
@@ -125,6 +126,6 @@ struct PhoneNumberTextField: View {
 
 struct PhoneNumberTextField_Previews: PreviewProvider {
     static var previews: some View {
-        PhoneNumberTextField(value: .constant(""), phoneNumber: .constant(""), letsGo: .constant(false))
+        PhoneNumberTextField(phoneNumber: .constant(""), countryCode: .constant(""), letsGo: .constant(false))
     }
 }

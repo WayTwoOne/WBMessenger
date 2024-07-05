@@ -26,11 +26,21 @@ struct EnteringCodeTextView: View {
                 .multilineTextAlignment(.center)
                 PinCodeTextFieldView()
             
+            Button {
+                viewModel.clearPinCodeTextField()
+            } label: {
+                Text("Запросить код повторно")
+                    .font(.system(size: 16))
+                    .foregroundColor(Color(red: 154/255, green: 65/255, blue: 254/255))
+            }
+
+            
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    viewModel.phoneNumber = ""
+                    viewModel.clearPhoneNumberAndCountryCode()
+                    viewModel.clearPinCodeTextField()
                     router.goBack()
                 } label: {
                     Image("vector")

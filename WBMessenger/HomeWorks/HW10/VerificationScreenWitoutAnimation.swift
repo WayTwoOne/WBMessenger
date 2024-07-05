@@ -9,16 +9,15 @@ import SwiftUI
 
 struct VerificationScreenWitoutAnimation: View {
     @State private var letsGo = false
-    @State private var phoneNumber = ""
-    @State private var countryCode = ""
     
+    @EnvironmentObject var viewModel: EnteringTheReceivedCodeViewModel
     @EnvironmentObject var router: RouterHW11
     
     var body: some View {
         VStack {
             PhoneNumberLabel()
-            PhoneNumberTextField(value: $countryCode, phoneNumber: $phoneNumber, letsGo: $letsGo)
-            ContinueButton(letsGo: $letsGo, phoneNumber: $phoneNumber, countryCode: $countryCode)
+            PhoneNumberTextField(phoneNumber: $viewModel.phoneNumber, countryCode: $viewModel.countryCode, letsGo: $letsGo)
+            ContinueButton(letsGo: $letsGo, phoneNumber: $viewModel.phoneNumber, countryCode: $viewModel.countryCode)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
